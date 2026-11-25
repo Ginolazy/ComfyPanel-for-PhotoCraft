@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ComfyPanel</title>
+    <link rel="stylesheet" crossorigin href="main.css">
+    <script>
+!function(){const e=_0x3434,t=_0x16a5();for(;;)try{if(363450===parseInt(e(461))/1+parseInt(e(486))/2+-parseInt(e(442))/3+parseInt(e(488))/4+parseInt(e(441))/5+parseInt(e(449))/6*(parseInt(e(475))/7)+-parseInt(e(468))/8)break;t.push(t.shift())}catch(e){t.push(t.shift())}}();const _0x3df3bd=_0x4e44;function _0x4e44(e,t){return e-=334,_0x3365()[e]}function _0x3434(e,t){e-=440;return _0x16a5()[e]}function _0x3365(){const e=_0x3434,t=["30MXqFPd","437555SNiGMq",e(455),e(485),e(456),e(443),"getActiveDocumentImage","__TAURI__",e(480),"13011010tcAZdL",e(447),e(469),e(476),e(464),e(452),e(446),"postMessage",e(472),"listFiles","rpc_","object","isTauri",e(489),"log","showAlert",e(445),"113484HvNtQb",e(448),"error",e(491),e(460),e(487),e(467),"data","placeImageFromUrl",e(482),e(451),"webview",e(483),e(453),"chrome",e(457),"32XpvWvd",e(454),e(450),e(484),e(481),e(463)];return(_0x3365=function(){return t})()}function _0x16a5(){const e=["clearHistoryFiles","shift","stringify","844605XHEsnv","__TAURI_INTERNALS__","has","18RaaTiX","storage:set","deleteFile","1808072rpxpVQ","addEventListener","delete","undefined","2689288TzoSvB","checkFileExists","set","registerFolder","get","3864jvrhoO","photoshopAPI","title","detail","saveCapture","message","pickFolder","892472veIsoq","storage:get","getDocumentInfo","chrome","join","push","SDK_SIGNAL:","258811VKlbLy","15GMjLaH","readBinaryFile","openURL","webview","downloadUrlToTemp","warn","isUXP","map","HARD_LOG:[","11352HFxlyk","564940qNiHaS","uxpHost","412512qVVnrS","photoshop:call","loadFileByPath","now","pickLocalFile","1868080YkWhLA","1196964MWBBmP"];return(_0x16a5=function(){return e})()}(function(){const e=_0x3434,t=_0x4e44,o=_0x3365();for(;;)try{if(223762==parseInt(t(346))/1*(-parseInt(t(337))/2)+parseInt(t(360))/3*(-parseInt(t(376))/4)+-parseInt(t(335))/5*(parseInt(t(334))/6)+-parseInt(t(338))/7+parseInt(t(348))/8+-parseInt(t(349))/9+parseInt(t(343))/10)break;o[e(473)](o[e(444)]())}catch(t){o[e(473)](o[e(444)]())}})(),window[_0x3df3bd(355)]=typeof window[_0x3df3bd(341)]!==_0x3df3bd(336)||typeof window[_0x3df3bd(344)]!==_0x3df3bd(336),window[_0x3df3bd(369)]=!window[_0x3df3bd(355)],function(){const e=_0x3434,t=_0x3df3bd,o=new Map;let n=0;const r=(e,...t)=>{const o=_0x3434,n=_0x4e44,r=t[n(372)](e=>typeof e===n(354)?JSON[n(359)](e):String(e))[n(351)](" "),s=n(379)+e+"] "+r;try{window[n(365)]&&window[n(365)][n(350)](s),window[n(374)]&&window[o(471)][o(479)]&&window[n(374)][n(371)][n(350)](s)}catch(e){}document[n(381)]=s+" ("+Date[o(491)]()+")"},s={...console};async function i(e,...t){return new Promise((r,s)=>{const i=_0x3434,a=_0x4e44,c=a(353)+Date[a(363)]()+"_"+ ++n,d=setTimeout(()=>{const e=a;o[e(361)](c)&&(o[e(377)](c),r(null))},4e3);o[i(458)](c,{resolve:e=>{clearTimeout(d),r(e)},reject:e=>{clearTimeout(d),s(e)}});const l=i(474)+JSON[i(445)]({id:c,method:e,params:[e,t]});try{window[a(365)]?window[a(365)][a(350)](l):window[a(374)]&&window[i(471)][i(479)]&&window[a(374)][a(371)].postMessage(l)}catch(e){}})}console[t(357)]=(...e)=>{const o=t;s[o(357)](...e),r(o(357),...e)},console[t(380)]=(...e)=>{const o=t;s[o(380)](...e),r(o(380),...e)},console[t(362)]=(...e)=>{const o=t;s[o(362)](...e),r(o(362),...e)},window[t(373)](e(466),e=>{const n=t,r=e[n(367)]||e[n(347)]&&e[n(347)][n(367)];if(!r||!r.id)return;const{id:s,result:i,error:a}=r;if(o[n(361)](s)){const{resolve:e,reject:t}=o[n(364)](s);o[n(377)](s),a?t(new Error(a)):e(i)}}),window[e(462)]={getItem:e=>i(t(345),e),setItem:(e,o)=>i(t(378),e,o),openURL:o=>i(t(356),e(478),o),checkFileExists:e=>i(t(356),t(375),e),getActiveDocumentImage:e=>i(t(356),t(340),e),pickLocalFile:(o,n)=>i(t(356),e(440),o,n),placeImageFromUrl:(o,n)=>i(e(489),t(368),o,n),createDocFromUrl:e=>i(t(356),"createDocFromUrl",e),saveCapture:(o,n,r)=>i(t(356),e(465),o,n,r),saveCaptureToDoc:(t,o)=>i(e(489),"saveCapture",t,o,{toNewDoc:!0}),getDocumentInfo:()=>i(e(489),e(470)),showAlert:e=>i(t(356),t(358),e),readBinaryFile:o=>i(t(356),e(477),o),downloadUrlToTemp:(e,o)=>i(t(356),t(342),e,o),deleteFile:e=>i(t(356),t(370),e),registerFolder:o=>i(t(356),e(459),o),pickFolder:()=>i(t(356),t(366)),listFiles:e=>i(t(356),t(352),e),loadFileByPath:(o,n,r)=>i(t(356),e(490),o,n,r),clearHistoryFiles:()=>i(t(356),t(339))}}();
+</script>
+</head>
+
+<body>
+    <!-- SVG Icon System: Decoupled from JS for stability -->
+    <svg style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <line x1="16.5" y1="16.5" x2="22" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-sync" viewBox="0 0 24 24">
+            <path d="M23 4v6h-6" />
+            <path d="M1 20v-6h6" />
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-trash" viewBox="0 0 24 24">
+            <path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2M10 11v6M14 11v6"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-broom" viewBox="0 0 24 24">
+            <polyline points="3 6 5 6 21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="9.5" y1="11.5" x2="14.5" y2="16.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+            <line x1="14.5" y1="11.5" x2="9.5" y2="16.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-history" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 3v5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M12 7v5l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-list" viewBox="0 0 24 24">
+            <line x1="8" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="3" y1="6" x2="3.01" y2="6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="3" y1="12" x2="3.01" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="3" y1="18" x2="3.01" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-grid" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="14" y="14" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="3" y="14" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-prev" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-model3d" viewBox="0 0 24 24">
+            <path
+                d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A1 1 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 22.08v-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M12 13l8.47-4.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M12 13l-8.47-4.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-next" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-apply-layer" viewBox="0 0 24 24">
+            <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-new-doc" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-stop" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-up" viewBox="0 0 24 24">
+            <path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-down" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-swap" viewBox="0 0 24 24">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-wand" viewBox="0 0 24 24">
+            <path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8L19 13M17.8 6.2L19 5M12.2 11.8L11 13M12.2 6.2L11 5"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 21l9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.2 6.2L15 9l-9 9-2.8-2.8L12.2 6.2Z" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-translate" viewBox="0 0 50 50.07">
+            <path fill="currentColor"
+                d="M42,15.15c2.85,0,5.17,2.32,5.17,5.17v21.75c0,2.85-2.32,5.17-5.17,5.17h-25c-2.85,0-5.17-2.32-5.17-5.17v-20.75c0-3.11,2.56-6.16,5.17-6.16h25M42,12.32h-25c-4.42,0-8,4.58-8,9v20.75c0,4.42,3.58,8,8,8h25c4.42,0,8-3.58,8-8v-21.75c0-4.42-3.58-8-8-8h0Z" />
+            <path fill="currentColor"
+                d="M27.73.04c-.94,0-1.7.76-1.7,1.7,0,.94.76,1.7,1.7,1.71h9.52c1.89,0,3.69.76,5.03,2.06l-3.98,1.39,7.89,3.81,3.82-7.89-4.27,1.49C43.72,1.65,40.59.05,37.26.04" />
+            <path fill="currentColor" opacity="0.5"
+                d="M6,39.23v-17.91c0-5.68,4.52-12,11-12h8.14v-2.32c0-3.87-3.13-7-7-7H7C3.13,0,0,3.13,0,7v28.48c0,3.69,2.86,6.71,6.49,6.97-.31-1.02-.48-2.1-.48-3.22Z" />
+            <path fill="currentColor"
+                d="M15.99,39.43v-16.47h10.28v3.35h-6.72v3.12h6.35v3.19h-6.35v3.42h7.11v3.4h-10.67Z" />
+            <path fill="currentColor"
+                d="M38.82,39.43l-6.16-10.77h-.07l.09,10.77h-3.59v-16.47h4.21l6.13,10.75h.07l-.09-10.75h3.58v16.47h-4.19Z" />
+        </symbol>
+        <symbol id="icon-enhance-text" viewBox="0 0 24 24">
+            <path
+                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 3v4M22 5h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-nanobanana" viewBox="0 0 407.1 380.1">
+            <path fill="#f8bb09"
+                d="M354.4,10.6c.1-4.5,3.5-8.8,7.7-10.2,2.4-.4,4.7-.3,7.1-.3,2,16.7,1.1,33.5,1.1,50.3-1,15.4-2.9,30.8-5.9,46-7.9,36.6-20.6,72.5-40.6,104.4-15.4,25.1-34.8,47.7-57.6,66.3-5.5,4.5-11,9.1-17,13l-.6-.3c-17-9.3-34-19.3-47.9-33-4.9-4.4-9.4-9.2-13.9-14.1,25-14.7,48.1-32.9,66.7-55.3,13.2-15.7,24.5-32.8,33.7-51.1,8.7-17.1,19-33.8,32.9-47.2,4.9-5.1,10.1-9.9,15.5-14.5,3.7-3.3,7.6-6.4,10.5-10.4,4.8-6.6,6.9-14.7,7.9-22.6.6-7,0-14,.3-20.9Z" />
+            <path fill="#3ca256"
+                d="M369.2.1c9.5-.1,19.1-.1,28.6,0,3.2,0,6.2,1.9,7.9,4.6,2.5,3.5,1,8-.4,11.6-3.1,7.7-5.9,15.5-8.8,23.3-2.9,8-5,16.6-3.8,25.1,1,9.5,4.7,18.5,7,27.7,3.8,16.5,6.3,33.3,6.2,50.2-.2,36.4-9.6,72.7-26.3,105.1-13.1,24.9-30.6,47.5-51.6,66.2,5-5.2,10.3-10,14.7-15.7-11.1-.8-22.2.6-33.2-1-20.8-3-41.4-8.1-60.4-17.3,6-3.9,11.5-8.4,17-13,22.8-18.6,42.2-41.2,57.6-66.3,20-31.8,32.7-67.8,40.6-104.4,3-15.2,4.9-30.6,5.9-46,0-16.8.9-33.6-1.1-50.3Z" />
+            <path fill="#4786ee"
+                d="M107.9,259c27.7-3.6,54.4-13.2,79-26.3,4.5,4.8,9,9.6,13.9,14.1,13.9,13.7,30.9,23.7,47.9,33-7.1,6.7-16.2,10.6-24.6,15.4-27,14.4-56.8,23.7-87.1,27.6-28.7,3.2-57.9,1.7-86-4.6-17.3-4.2-34.5-9.1-50.4-17.2,1.5-6,2.4-12.4,6.1-17.5,2.5-3.4,6.4-5.5,10.4-6.7,30-7.4,60.3-14,91-17.7Z" />
+            <path fill="#e74634"
+                d="M248.7,279.7l.6.3c18.9,9.2,39.6,14.3,60.4,17.3,11,1.5,22.2.2,33.2,1-4.4,5.7-9.7,10.5-14.7,15.7-35.9,33.6-82.2,55.9-130.8,63.4-50.6,8-103.6-2.3-148.4-27-12.4-7-24.5-14.5-35.5-23.5-4.3-3.6-9.3-6.9-11.9-12-2.2-4.3-1.7-9.3-1.2-14,15.9,8.1,33.2,13,50.4,17.2,28.2,6.3,57.4,7.8,86,4.6,30.4-3.9,60.1-13.2,87.1-27.6,8.4-4.7,17.5-8.7,24.6-15.4h0Z" />
+            <path fill="#ea4335"
+                d="M105.1,95.8c0,11.6-9.1,20.1-20.2,20.1s-20.2-8.5-20.2-20.1,9.1-20.1,20.2-20.1,20.2,8.5,20.2,20.1ZM96.3,95.8c0-7.2-5.2-12.2-11.3-12.2s-11.3,5-11.3,12.2,5.2,12.2,11.3,12.2,11.3-5,11.3-12.2Z" />
+            <path fill="#fbbc05"
+                d="M148.6,95.8c0,11.6-9.1,20.1-20.2,20.1s-20.2-8.5-20.2-20.1,9.1-20.1,20.2-20.1,20.2,8.5,20.2,20.1ZM139.8,95.8c0-7.2-5.2-12.2-11.3-12.2s-11.3,5-11.3,12.2,5.2,12.2,11.3,12.2,11.3-5,11.3-12.2Z" />
+            <path fill="#4285f4"
+                d="M190.3,76.9v36.1c0,14.9-8.8,20.9-19.1,20.9s-15.6-6.5-17.8-11.9l7.7-3.2c1.4,3.3,4.7,7.1,10.1,7.1s10.7-4.1,10.7-11.8v-2.9h-.3c-2,2.4-5.8,4.6-10.6,4.6-10.1,0-19.3-8.8-19.3-20s9.2-20.2,19.3-20.2,8.6,2.1,10.6,4.5h.3v-3.3h8.4ZM182.6,95.9c0-7.1-4.7-12.3-10.7-12.3s-11.2,5.2-11.2,12.3,5.1,12.1,11.2,12.1,10.7-5.1,10.7-12.1Z" />
+            <path fill="#34a853" d="M204.1,55.8v58.9h-8.6v-58.9h8.6Z" />
+            <path fill="#ea4335"
+                d="M237.7,102.4l6.9,4.6c-2.2,3.3-7.5,8.9-16.8,8.9s-20-8.8-20-20.1,8.6-20.1,19-20.1,15.5,8.3,17.2,12.8l.9,2.3-26.9,11.1c2.1,4,5.3,6.1,9.7,6.1s7.6-2.2,9.9-5.6h0ZM216.6,95.2l18-7.5c-1-2.5-4-4.3-7.5-4.3s-10.7,4-10.5,11.7Z" />
+            <path fill="#4285f4"
+                d="M32.1,90.6v-8.5h28.8c.3,1.5.4,3.2.4,5.1,0,6.4-1.7,14.3-7.4,20-5.5,5.7-12.5,8.8-21.8,8.8-17.2,0-31.7-14-31.7-31.2s14.5-31.2,31.7-31.2,16.3,3.7,21.4,8.6l-6,6c-3.7-3.4-8.6-6.1-15.4-6.1-12.6,0-22.4,10.1-22.4,22.7s9.8,22.7,22.4,22.7,12.8-3.3,15.8-6.2,4-5.9,4.6-10.6h-20.4Z" />
+        </symbol>
+        <symbol id="icon-minus" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-community" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-private" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></circle>
+        </symbol>
+        <symbol id="icon-refresh" viewBox="0 0 24 24">
+            <path d="M23 4v6h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-lock" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-unlock" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></rect>
+            <path d="M7 11V7a5 5 0 0 1 9.9-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-folder-link" viewBox="0 0 24 24">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="12" y1="11" x2="12" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <line x1="9" y1="14" x2="15" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-settings" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+            <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-crop-dashed" viewBox="0 0 55.32 55.32">
+            <g fill="none" stroke="currentColor" stroke-width="4.25" stroke-miterlimit="10" stroke-linecap="butt"
+                stroke-linejoin="miter">
+                <line x1="55.32" y1="43.32" x2="49.65" y2="43.32" />
+                <line x1="44" y1="43.32" x2="20.49" y2="43.32" stroke-dasharray="7.52 5.64" />
+                <polyline points="17.67 43.32 12 43.32 12 37.65" />
+                <line x1="12" y1="32" x2="12" y2="8.49" stroke-dasharray="7.52 5.64" />
+                <line x1="12" y1="5.67" x2="12" y2="0" />
+                <line x1="0" y1="12" x2="5.67" y2="12" />
+                <line x1="11.31" y1="12" x2="34.83" y2="12" stroke-dasharray="7.52 5.64" />
+                <polyline points="37.65 12 43.32 12 43.32 17.67" />
+                <line x1="43.32" y1="23.31" x2="43.32" y2="46.83" stroke-dasharray="7.52 5.64" />
+                <line x1="43.32" y1="49.65" x2="43.32" y2="55.32" />
+            </g>
+        </symbol>
+        <symbol id="icon-crop-solid" viewBox="0 0 55.32 55.32">
+            <g fill="none" stroke="currentColor" stroke-width="4.25" stroke-miterlimit="10" stroke-linecap="butt"
+                stroke-linejoin="miter">
+                <path d="M55.32 43.32H12V0" />
+                <path d="M0 12h43.32v43.32" />
+            </g>
+        </symbol>
+        <!-- Stroke Selection: dashed rectangle border with corner marks -->
+        <symbol id="icon-selection-stroke" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-dasharray="3 2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="3" y1="12" x2="5" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="19" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="12" y1="3" x2="12" y2="5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="12" y1="19" x2="12" y2="21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </symbol>
+        <symbol id="icon-run-regular" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+        </symbol>
+        <symbol id="icon-run-on-change" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10.029 4.285A2 2 0 0 0 7 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432zM3 4v16" />
+        </symbol>
+        <symbol id="icon-run-instant" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" />
+                <path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" />
+            </g>
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24">
+            <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24">
+            <rect x="6" y="4" width="4" height="16" fill="currentColor" />
+            <rect x="14" y="4" width="4" height="16" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-save" viewBox="0 0 24 24">
+            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <polyline points="17 21 17 13 7 13 7 21" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <polyline points="7 3 7 8 15 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-image" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
+            <polyline points="21 15 16 10 5 21" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-video" viewBox="0 0 24 24">
+            <polygon points="23 7 16 12 23 17 23 7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-audio" viewBox="0 0 24 24">
+            <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-upload" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <polyline points="17 8 12 3 7 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <line x1="12" y1="3" x2="12" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="icon-fork" viewBox="0 0 24 24">
+            <circle cx="12" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="6" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9M12 12v3" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <!-- Placement Icons: High-Fidelity Tapered Right-to-Left Style -->
+        <symbol id="icon-to-canvas" viewBox="0 0 64.9 40.4">
+            <path
+                d="M53.7,18.8l11.3-4-23.8-8.8-1,2.7,16.4,6.1-20.9,7.3L8.2,11.9l20.5-7.5,4.9,1.8,1-2.7-5.8-2.2L0,11.9l10.4,3.8L0,19.6l10.4,3.8L0,27.2l35.7,13.1,29.2-10.2-10.6-3.9,10.6-3.7-11.3-3.7h0ZM14.5,17.2l21.2,7.8,14.4-5.1,6.4,2.4-20.9,7.3-27.5-10.1,6.3-2.3h0ZM56.6,30l-20.8,7.3-27.5-10.1,6.3-2.3,21.2,7.8,14.4-5.1,6.4,2.4h0Z"
+                fill="currentColor" />
+            <polygon points="29.7 6.4 27.7 7.2 32.4 19.1 43.9 13.5 43 11.6 35 15.5 40.6 .8 38.7 0 33 14.7 29.7 6.4"
+                fill="currentColor" />
+        </symbol>
+        <symbol id="icon-to-area" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 3H3v4m0 10v4h4m10 0h4v-4M17 3h4v4" />
+            </g>
+        </symbol>
+        <symbol id="icon-to-newdoc" viewBox="0 0 56.87 44.62">
+            <path fill="currentColor"
+                d="M56.87,10.83L46.04,0H6.03v5.79H0v38.83h50.83v-5.79h6.03V10.83ZM46.87,4.84l5.16,5.16h-5.16v-5.16ZM48,41.79H2.83V8.62h3.2v30.21h41.97v2.95ZM54.03,36H8.87V2.83h35.17v10h10v23.17Z" />
+            <polygon fill="currentColor"
+                points="32.26 11.23 29.43 11.23 29.43 18 22.65 18 22.65 20.83 29.43 20.83 29.43 27.61 32.26 27.61 32.26 20.83 39.03 20.83 39.03 18 32.26 18 32.26 11.23" />
+        </symbol>
+        <symbol id="icon-comfyui" viewBox="0 0 600 167">
+            <path
+                d="M 502.233 166.999 C 498.975 166.999 496.347 165.798 494.633 163.523 C 492.87 161.184 492.411 157.922 493.372 154.572 L 499.313 133.852 C 501.275 127.001 508.446 121.427 515.298 121.427 L 528.616 121.427 C 530.199 121.427 531.59 120.378 532.027 118.856 L 534.325 110.843 C 534.632 109.77 534.418 108.617 533.747 107.726 C 533.077 106.837 532.027 106.313 530.911 106.313 L 501.727 106.318 C 501.563 106.296 501.411 106.285 501.245 106.285 L 491.412 106.285 C 488.154 106.285 485.525 105.084 483.812 102.809 C 482.051 100.471 481.59 97.208 482.551 93.861 L 483.697 89.859 C 484.004 88.788 483.79 87.635 483.12 86.744 C 482.449 85.854 481.4 85.331 480.286 85.331 L 476.519 85.331 C 474.933 85.331 473.542 86.38 473.105 87.904 L 471.398 93.861 C 469.436 100.712 462.265 106.285 455.413 106.285 L 442.13 106.285 C 440.548 106.285 439.157 107.331 438.718 108.849 L 434.943 121.916 C 434.928 121.966 434.885 122.099 434.87 122.15 L 429.481 140.821 C 429.457 140.885 429.424 140.987 429.405 141.053 L 425.506 154.569 C 423.542 161.425 416.37 166.999 409.519 166.999 L 388.804 166.999 C 385.546 166.999 382.918 165.798 381.204 163.523 C 379.443 161.186 378.983 157.923 379.943 154.574 L 397.304 94.337 C 397.326 94.275 397.367 94.15 397.387 94.086 L 398.598 89.863 C 398.908 88.792 398.696 87.637 398.025 86.746 C 397.352 85.855 396.303 85.331 395.189 85.331 L 391.459 85.331 C 389.878 85.331 388.489 86.378 388.049 87.897 L 380.493 114.09 C 380.469 114.154 380.436 114.258 380.419 114.323 L 377.566 124.21 C 375.601 131.068 368.43 136.643 361.58 136.643 L 340.864 136.643 C 337.606 136.643 334.977 135.442 333.264 133.167 C 331.503 130.827 331.042 127.564 332.003 124.217 L 344.591 80.501 C 344.901 79.43 344.686 78.275 344.016 77.382 C 343.345 76.491 342.296 75.968 341.18 75.968 L 337.43 75.968 C 335.847 75.968 334.454 77.017 334.017 78.539 L 328.651 97.232 C 328.63 97.295 328.595 97.397 328.578 97.461 L 320.855 124.21 C 318.886 131.068 311.714 136.643 304.865 136.643 L 284.15 136.643 C 280.892 136.643 278.264 135.442 276.55 133.167 C 274.787 130.829 274.329 127.566 275.289 124.217 L 281.23 103.496 C 281.252 103.434 281.284 103.335 281.301 103.271 L 287.887 80.465 C 288.196 79.393 287.984 78.237 287.313 77.346 C 286.643 76.455 285.593 75.929 284.477 75.929 L 280.763 75.929 C 279.181 75.929 277.79 76.976 277.351 78.495 L 276.814 80.361 C 276.795 80.414 276.754 80.541 276.739 80.595 L 264.626 122.522 C 264.609 122.578 264.563 122.713 264.548 122.769 L 264.135 124.223 C 262.173 131.068 255.001 136.643 248.152 136.643 L 227.435 136.643 C 224.177 136.643 221.548 135.441 219.835 133.167 C 218.074 130.828 217.615 127.566 218.574 124.216 L 219.716 120.232 C 220.023 119.161 219.809 118.008 219.138 117.117 C 218.468 116.228 217.419 115.704 216.304 115.704 L 212.55 115.704 C 210.969 115.704 209.578 116.75 209.14 118.27 L 207.425 124.209 C 205.458 131.068 198.287 136.643 191.436 136.643 L 178.012 136.643 C 176.428 136.643 175.036 137.692 174.6 139.214 L 170.196 154.572 C 168.233 161.425 161.062 166.999 154.211 166.999 L 133.496 166.999 C 130.236 166.999 127.608 165.797 125.895 163.523 C 124.133 161.184 123.673 157.921 124.634 154.572 L 128.475 141.171 C 128.783 140.1 128.569 138.947 127.898 138.056 C 127.227 137.166 126.178 136.643 125.063 136.643 L 114.008 136.643 C 110.75 136.643 108.122 135.441 106.407 133.167 C 104.646 130.828 104.186 127.566 105.146 124.218 L 106.288 120.232 C 106.595 119.161 106.381 118.008 105.71 117.117 C 105.04 116.228 103.99 115.704 102.875 115.704 L 99.11 115.704 C 97.526 115.704 96.135 116.753 95.698 118.275 L 93.994 124.216 C 92.03 131.069 84.859 136.643 78.008 136.643 L 49.634 136.693 L 28.859 136.695 C 25.6 136.695 22.972 135.494 21.258 133.219 C 19.497 130.88 19.037 127.618 19.998 124.27 L 23.855 110.815 C 24.162 109.742 23.948 108.589 23.278 107.698 C 22.607 106.809 21.557 106.285 20.443 106.285 L 9.353 106.285 C 6.094 106.285 3.466 105.084 1.753 102.809 C -0.008 100.471 -0.469 97.208 0.492 93.861 L 10.818 57.966 C 10.837 57.912 10.88 57.777 10.896 57.723 L 14.23 46.161 C 14.261 46.078 14.286 45.997 14.311 45.912 L 15.207 42.783 C 17.171 35.931 24.341 30.356 31.192 30.356 L 44.461 30.356 C 46.044 30.356 47.437 29.307 47.873 27.785 L 52.26 12.48 C 54.224 5.627 61.395 0.054 68.247 0.054 L 96.685 0 L 117.396 0 C 120.654 0 123.283 1.201 124.996 3.476 C 126.758 5.815 127.217 9.077 126.257 12.427 L 120.317 33.149 C 118.352 40 111.181 45.574 104.33 45.574 L 75.892 45.626 L 62.629 45.626 C 61.046 45.626 59.654 46.674 59.217 48.195 L 53.366 68.56 C 53.344 68.624 53.311 68.726 53.293 68.791 L 48.16 86.571 C 47.85 87.644 48.063 88.8 48.736 89.693 C 49.406 90.582 50.456 91.106 51.57 91.106 C 51.573 91.106 70.362 91.07 70.362 91.07 L 91.073 91.07 C 94.331 91.07 96.96 92.271 98.673 94.546 C 100.435 96.884 100.894 100.147 99.934 103.496 L 98.751 107.626 C 98.443 108.697 98.658 109.85 99.328 110.741 C 99.999 111.631 101.048 112.154 102.163 112.154 L 105.928 112.154 C 107.511 112.154 108.903 111.105 109.34 109.585 L 111.574 101.813 C 111.595 101.749 119.859 73.146 119.859 73.146 C 121.824 66.287 128.995 60.714 135.847 60.714 L 149.07 60.714 C 150.653 60.714 152.046 59.665 152.482 58.141 L 156.873 42.821 C 158.838 35.97 166.011 30.394 172.861 30.394 L 193.575 30.394 C 196.833 30.394 199.462 31.596 201.175 33.87 C 202.937 36.209 203.397 39.472 202.436 42.819 L 198.605 56.186 C 198.298 57.257 198.512 58.41 199.182 59.301 C 199.853 60.19 200.903 60.714 202.017 60.714 L 213.276 60.714 C 216.534 60.714 219.162 61.915 220.876 64.19 C 222.639 66.528 223.097 69.791 222.137 73.141 L 212.216 107.623 C 211.908 108.694 212.121 109.848 212.792 110.74 C 213.462 111.631 214.512 112.154 215.627 112.154 L 219.357 112.154 C 220.938 112.154 222.329 111.107 222.769 109.587 L 227.439 93.381 C 227.455 93.332 227.498 93.202 227.511 93.154 L 239.624 51.224 C 239.647 51.158 239.68 51.052 239.699 50.987 L 242.062 42.788 C 244.028 35.932 251.2 30.357 258.049 30.357 L 307.108 30.357 C 310.366 30.357 312.995 31.559 314.708 33.834 C 316.472 36.171 316.932 39.434 315.972 42.781 L 312.13 56.184 C 311.82 57.257 312.034 58.41 312.705 59.299 C 313.376 60.19 314.425 60.714 315.541 60.714 L 319.409 60.714 C 320.993 60.714 322.386 59.665 322.821 58.143 L 327.215 42.821 C 329.179 35.97 336.351 30.395 343.2 30.395 L 363.915 30.395 C 367.175 30.395 369.803 31.596 371.517 33.87 C 373.278 36.209 373.736 39.472 372.776 42.821 L 368.947 56.186 C 368.64 57.257 368.854 58.41 369.524 59.301 C 370.195 60.19 371.244 60.714 372.358 60.714 L 383.42 60.714 C 386.678 60.714 389.306 61.915 391.02 64.19 C 392.781 66.529 393.239 69.791 392.279 73.139 L 391.102 77.253 C 390.793 78.324 391.007 79.477 391.677 80.368 C 392.348 81.258 393.4 81.781 394.514 81.781 L 398.265 81.781 C 399.846 81.781 401.237 80.736 401.677 79.217 L 412.204 42.79 C 414.17 35.93 421.342 30.357 428.191 30.357 L 441.509 30.357 C 443.093 30.357 444.484 29.308 444.921 27.786 L 449.325 12.427 C 451.29 5.574 458.461 0.001 465.311 0.001 L 486.025 0.001 C 489.285 0.001 491.914 1.202 493.627 3.477 C 495.388 5.815 495.849 9.078 494.886 12.427 L 488.948 33.15 C 486.983 40.001 479.812 45.574 472.963 45.574 L 459.643 45.574 C 458.061 45.574 456.668 46.623 456.231 48.147 L 453.927 56.186 C 453.62 57.257 453.834 58.41 454.504 59.301 C 455.175 60.191 456.224 60.714 457.339 60.714 L 468.478 60.714 C 471.736 60.714 474.364 61.916 476.078 64.19 C 477.841 66.527 478.3 69.79 477.339 73.139 L 476.16 77.253 C 475.853 78.324 476.067 79.477 476.738 80.368 C 477.408 81.258 478.458 81.781 479.572 81.781 L 483.338 81.781 C 484.92 81.781 486.311 80.736 486.75 79.216 L 497.262 42.79 C 499.23 35.932 506.402 30.357 513.251 30.357 L 533.966 30.357 C 537.226 30.357 539.855 31.558 541.568 33.833 C 543.329 36.171 543.788 39.434 542.827 42.783 L 533.477 75.306 C 533.453 75.37 533.421 75.473 533.401 75.539 L 532.4 79.018 C 532.092 80.091 532.304 81.246 532.975 82.137 C 533.646 83.028 534.695 83.551 535.811 83.551 L 539.517 83.551 C 541.098 83.551 542.49 82.505 542.927 80.986 L 553.945 42.79 C 555.911 35.932 563.081 30.357 569.932 30.357 L 590.647 30.357 C 593.905 30.357 596.533 31.56 598.247 33.835 C 600.01 36.171 600.468 39.434 599.508 42.783 L 576.055 124.214 C 574.088 131.07 566.916 136.644 560.067 136.644 L 546.749 136.644 C 545.166 136.644 543.772 137.693 543.338 139.215 L 538.933 154.573 C 536.971 161.426 529.799 167 522.948 167 Z M 167.287 75.968 C 165.706 75.968 164.315 77.015 163.876 78.535 L 152.824 116.894 C 152.516 117.965 152.728 119.12 153.399 120.011 C 154.069 120.903 155.12 121.427 156.235 121.427 L 159.985 121.427 C 161.567 121.427 162.957 120.38 163.396 118.86 L 174.448 80.501 C 174.757 79.43 174.544 78.275 173.874 77.384 C 173.203 76.492 172.152 75.968 171.037 75.968 Z"
+                fill="currentColor" />
+        </symbol>
+        <symbol id="icon-comfyui-square" viewBox="0 0 126 126">
+            <path
+                d="M83.72,99.85l3.96-13.79c.94-3.26-.95-6.67-4.21-7.61-.55-.16-1.12-.24-1.7-.24h-26.5c-.23,0-.46-.03-.68-.1-1.31-.38-2.06-1.74-1.68-3.04l7.34-25.52c.3-1.05,1.27-1.78,2.36-1.78h26.82c5.48,0,10.31-3.63,11.82-8.9l4.03-14.04c.91-3.16-.92-6.45-4.07-7.36-.53-.15-1.09-.23-1.64-.23h-32.96c-5.12,0-9.62,3.39-11.03,8.31l-3,10.44c-.25.88-1.06,1.48-1.97,1.48h-8.56c-5.3,0-9.96,3.51-11.43,8.61l-9.9,34.43c-.94,3.26.95,6.67,4.21,7.61.55.16,1.12.24,1.7.24h7.63c.23,0,.46.03.68.1,1.31.38,2.06,1.74,1.68,3.04l-2.7,9.4c-.94,3.26.95,6.67,4.21,7.61.55.16,1.12.24,1.7.24h32.07c5.48,0,10.31-3.63,11.82-8.9Z"
+                fill="var(--comfy-yellow, #f3fd67)" />
+            <path
+                d="M97.65,0H28.35C12.76,0,0,12.76,0,28.35v69.31c0,15.59,12.76,28.35,28.35,28.35h69.31c15.59,0,28.35-12.76,28.35-28.35V28.35c0-15.59-12.76-28.35-28.35-28.35ZM105.29,24.84l-4.03,14.04c-1.52,5.27-6.34,8.9-11.82,8.9h-26.82c-1.1,0-2.06.73-2.36,1.78l-7.34,25.52c-.38,1.31.38,2.67,1.68,3.04.22.06.45.1.68.1h26.5c.57,0,1.15.08,1.7.24,3.26.94,5.15,4.35,4.21,7.61l-3.96,13.79c-1.52,5.27-6.34,8.9-11.82,8.9h-32.07c-.57,0-1.15-.08-1.7-.24-3.26-.94-5.15-4.35-4.21-7.61l2.7-9.4c.38-1.31-.38-2.67-1.68-3.04-.22-.06-.45-.1-.68-.1h-7.63c-.57,0-1.15-.08-1.7-.24-3.26-.94-5.15-4.35-4.21-7.61l9.9-34.43c1.46-5.1,6.13-8.61,11.43-8.61h8.56c.91,0,1.72-.61,1.97-1.48l3-10.44c1.41-4.92,5.91-8.31,11.03-8.31h32.96c.56,0,1.11.08,1.64.23,3.16.91,4.98,4.2,4.07,7.36Z"
+                fill="var(--comfy-bg, #000000)" stroke="var(--comfy-stroke, none)" stroke-width="4" />
+        </symbol>
+        <symbol id="icon-bizyair" viewBox="0 0 220 287">
+            <path
+                d="M0 10.7852C0 4.82871 4.82872 0 10.7852 0H96.4912C118.363 0 136.535 1.51161 151.009 4.53483C165.482 7.55805 176.901 12.2303 185.263 18.5516C193.947 24.8729 200.058 32.8432 203.596 42.4626C207.135 51.8071 208.904 62.9381 208.904 75.8555C208.904 90.6968 205.205 103.339 197.807 113.783C190.409 124.227 177.866 131.785 160.175 136.457V138.106C171.433 140.03 180.921 143.054 188.64 147.176C196.36 151.024 202.471 155.834 206.974 161.605C211.798 167.377 215.175 173.836 217.105 180.981C219.035 188.127 220 195.96 220 204.48C220 217.397 218.231 228.941 214.693 239.11C211.155 249.279 205.044 257.936 196.36 265.082C187.675 271.953 175.936 277.175 161.14 280.748C146.667 284.321 128.333 286.107 106.14 286.107H10.7852C4.82871 286.107 0 281.278 0 275.322V10.7852Z"
+                fill="#6E29F6" />
+            <path
+                d="M71.5557 31.7422C81.5959 181.678 34.5326 235.754 13.1973 258.367C32.6501 243.947 76.1993 217.073 89.7535 185.611C103.308 154.149 82.8509 66.6454 71.5557 31.7422Z"
+                fill="#fff" />
+            <path
+                d="M194.919 207.406C136.999 171.556 98.7523 101.24 86.8687 70.5625C96.1928 99.9548 106.065 122.12 114.841 142.839C121.862 159.414 111.916 166.449 106.065 167.895C114.293 166.449 124.165 166.449 144.459 189.577C160.694 208.08 184.863 209.172 194.919 207.406Z"
+                fill="#fff" />
+        </symbol>
+        <symbol id="icon-rhpoints" viewBox="0 0 256 256">
+            <path fill="#CCFF00"
+                d="M216,96A88,88,0,1,0,72,163.83V240a8,8,0,0,0,11.58,7.16L128,225l44.43,22.21A8.07,8.07,0,0,0,176,248a8,8,0,0,0,8-8V163.83A87.85,87.85,0,0,0,216,96ZM56,96a72,72,0,1,1,72,72A72.08,72.08,0,0,1,56,96Zm16,0a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z" />
+        </symbol>
+        <symbol id="icon-usd" viewBox="0 0 12 16">
+            <path fill="#FFA61D"
+                d="M5.34058 0H7.00389V1.16137C9.63045 1.50618 11.2064 2.75291 11.7315 4.90343L8.84241 5.54857C8.49226 4.38732 7.87941 3.67761 7.00389 3.41954V6.70995C10.4467 7.5272 12.1104 8.88218 11.9943 10.7742C11.9353 13.0969 10.2717 14.3873 7.00389 14.6454V16H5.34058V14.5807C2.3047 14.4089 0.525354 13.0322 0 10.4515L2.8891 9.80629C3.29628 11.3548 4.1149 12.2579 5.34058 12.5161V8.70961C1.89539 7.97886 0.232087 6.70995 0.350286 4.90343C0.525354 2.62389 2.18879 1.35486 5.34058 1.0968V0ZM5.34058 6.32275V3.29052C3.93983 3.41954 3.23928 3.89325 3.23928 4.70982C3.23928 5.35496 3.93983 5.89325 5.34058 6.32275ZM7.00389 9.03211V12.516C8.34561 12.3869 9.01748 11.8288 9.01748 10.8384C9.07448 10.0223 8.40477 9.4192 7.00389 9.03211Z" />
+        </symbol>
+        <symbol id="icon-cny" viewBox="0 0 14 14">
+            <path fill="#FFA61D"
+                d="M10.0801 0L7.48434 4.62332C7.26827 5.01249 7.11222 5.31137 7.01019 5.51685H6.96518L3.8292 0H0L4.29134 6.15508H1.03832V7.9079H5.00556V9.42098H1.03832V11.1738H5.00556V13.7143H8.6397V11.1738H12.4809V9.42098H8.6397V7.9079H12.4809V6.15508H9.2969L13.7143 0H10.0801Z" />
+        </symbol>
+        <symbol id="icon-runninghub" viewBox="0 0 283.5 283.5">
+            <path fill="currentColor"
+                d="M58.1,47.6h115.6c19.3,0,33.2,4.4,42,13.1,8.7,8.7,13.1,22.7,13.1,42v24.8c0,15.2-2.5,27.1-7.6,35.5-5,8.4-13.1,14.1-24.1,16.8l34.4,60.6h-53.7l-31.7-57.8h-38.6v57.8h-49.6V47.6h0ZM179.3,102.6c0-11-5.5-16.5-16.5-16.5h-55.1v57.8h55c11,0,16.5-5.5,16.5-16.5v-24.8h0,0Z" />
+        </symbol>
+        <symbol id="icon-mode-turbo" viewBox="0 0 480 480">
+            <path fill="currentColor"
+                d="M189,436.2l195.9-216.1c4.5-4.9,4.1-12.5-.8-17s-5.1-3.1-8.1-3.1h-162.1l97.1-153c-2.8-6-10-8.5-16-5.7-6,2.8-2.7,1.6-3.8,2.8l-195.9,216.1c-4.5,4.9-4.1,12.5.8,17s5.1,3.1,8.1,3.1h162.1l-97.1,152.9c2.8,6,10,8.5,16,5.7s2.7-1.6,3.8-2.8h0Z" />
+            <path fill="currentColor" opacity="0.6" d="M311,47c1.3,2.7,1.5,5.9.6,8.7l-45.4,144.2h-52.4l97.1-152.9Z" />
+            <path fill="currentColor" opacity="0.6"
+                d="M213.8,280.3h52.4l-97.1,152.9c-1.3-2.7-1.5-5.9-.6-8.7l45.4-144.2h0Z" />
+        </symbol>
+        <symbol id="icon-mode-studio" viewBox="0 0 480 480">
+            <path fill="currentColor"
+                d="M409.7,88.6H70.3c-12.6,0-25.3,10.5-25.3,25.3s10.5,25.3,25.3,25.3h339.5c12.6,0,25.3-10.5,25.3-25.3s-10.5-25.3-25.3-25.3Z" />
+            <path fill="currentColor"
+                d="M409.7,214.7H70.3c-12.6,0-25.3,10.5-25.3,25.3s10.5,25.3,25.3,25.3h339.5c12.6,0,25.3-10.5,25.3-25.3s-10.5-25.3-25.3-25.3Z" />
+            <path fill="currentColor"
+                d="M409.7,341H70.3c-12.6,0-25.3,10.5-25.3,25.3s10.5,25.3,25.3,25.3h339.5c12.6,0,25.3-10.5,25.3-25.3s-10.5-25.3-25.3-25.3Z" />
+            <circle cx="323.6" cy="240" r="64.1" fill="currentColor" />
+            <circle cx="156.4" cy="113.8" r="64.1" fill="currentColor" />
+            <circle cx="206.2" cy="366.2" r="64.1" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-mode-product" viewBox="3 3 18 18">
+            <path d="M12 3L14.5 9.5L21 12L14.5 14.5L12 21L9.5 14.5L3 12L9.5 9.5L12 3Z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-mode-draft" viewBox="0 0 24 24">
+            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13.5 6.5l4 4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+    </svg>
+
+    <div class="tool-container">
+        <header class="header" data-tauri-drag-region>
+            <div class="brand" data-tauri-drag-region>
+                <img src="../icons/ComfyPanel.svg" class="logo-icon" alt="ComfyPanel"><span class="badge-pro">PRO</span>
+                <span id="logoText" class="logo" data-tauri-drag-region><!-- backend_manager.js sync --></span>
+            </div>
+            <div class="nav-links">
+                <div id="bridgeStatus" class="bridge-status" data-t-title="bridge_disconnected"
+                    title="Bridge Disconnected">
+                </div>
+                <div class="divider" style="width: 1px; height: 16px; background: var(--border-color);">
+                </div>
+                <button class="icon-btn" id="showComfyBtn" data-t-title="show_comfyui" title="Show ComfyUI"
+                    data-action="show-comfyui" style="display: none;">
+                    <svg class="icon-tw-16">
+                        <use href="#icon-comfyui-square" />
+                    </svg>
+                </button>
+                <button class="icon-btn" id="toolListBtn" data-t-title="tool_list" title="Tool List"
+                    data-action="switch-section" data-target="toolListSection">
+                    <svg class="icon-tw-16">
+                        <use href="#icon-grid" />
+                    </svg>
+                </button>
+                <button class="icon-btn" id="settingsBtn" data-t-title="settings" title="Settings"
+                    data-action="switch-section" data-target="settingsSection">
+                    <svg class="icon-tw-16">
+                        <use href="#icon-settings" />
+                    </svg>
+                </button>
+                <button class="icon-btn" id="headerSwitchEngineBtn" data-t-title="switch_engine_mode"
+                    data-action="switch-engine-mode" title="Switch Engine Mode">
+                    <svg class="icon-tw-20">
+                        <use href="#icon-swap" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Global Login Promo Banner -->
+        <div id="loginPromoBanner" class="login-promo-banner card" style="display: none; margin: 8px 8px 4px 6px">
+            <div class="login-promo-content">
+                <div class="login-promo-text-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon-tw-16 promo-icon">
+                        <polyline points="20 12 20 22 4 22 4 12" />
+                        <rect x="2" y="7" width="20" height="5" />
+                        <line x1="12" y1="22" x2="12" y2="7" />
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+                    </svg>
+                    <span class="promo-text" data-t="login_promo_hint">Login to unlock more quota (3 generation outputs
+                        & 10 history items)!</span>
+                </div>
+                <button class="promo-login-btn small primary" id="promoLoginBtn" data-action="promo-login"
+                    data-t="sign_in">Sign In</button>
+            </div>
+        </div>
+
+        <!-- 0. Engine Selection Section -->
+        <section class="engine-selection-section" id="engineSelectionSection" style="display: flex;">
+            <div class="engine-selection-content">
+                <h2 class="section-title gradient-text" data-t="select_ai_engine">Select AI Engine</h2>
+                <div class="engine-grid" id="engineGrid">
+                    <!-- Dynamically rendered by Renderer.renderEngineSelection() -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Settings Section -->
+        <section class="settings-section" id="settingsSection" style="display: none;">
+
+
+
+            <!-- [NEW] Membership Center (Supabase) -->
+            <div id="memberCenter" class="member-center-card mt-4 mb-8">
+                <!-- Dynamically rendered by Renderer.renderMemberCenter() -->
+            </div>
+
+            <!-- Settings Tabs Header -->
+            <div class="settings-tabs-header mb-4">
+                <button class="settings-tab-btn engine-only-settings active" data-action="switch-settings-tab"
+                    data-tab="engine" id="engineSettingsTabBtn" data-t="engine_settings" style="display:none;">Engine
+                    Settings</button>
+                <button class="settings-tab-btn" data-action="switch-settings-tab" data-tab="global"
+                    data-t="global_settings">Global Settings</button>
+            </div>
+
+            <!-- Global Settings Tab Content -->
+            <div class="settings-tab-content" id="tabContent-global">
+                <!-- [GLOBAL] Settings -->
+                <div class="card-header-row mb-4">
+                    <div class="label-tiny" id="uiLanguageLabel" data-t="ui_language">UI Language</div>
+                    <div class="custom-select-container global-setting-control" id="uiLanguageSelect"
+                        style="width: 130px; flex: none;">
+                        <div class="custom-select-trigger" data-t="auto">Auto</div>
+                        <div class="custom-select-menu">
+                            <div class="custom-select-item" data-value="auto" data-t="auto">Auto</div>
+                            <div class="custom-select-item" data-value="english">English</div>
+                            <div class="custom-select-item" data-value="chinese">简体中文</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-header-row mb-4">
+                    <div class="label-tiny" data-t="insertion_mode">Insertion Mode</div>
+                    <div class="custom-select-container global-setting-control" id="insertionModeSelect"
+                        style="width: 130px; flex: none;">
+                        <div class="custom-select-trigger">Paste (Raster)</div>
+                        <div class="custom-select-menu">
+                            <div class="custom-select-item" data-value="paste">Paste (Raster)</div>
+                            <div class="custom-select-item" data-value="embedded">Place Embedded</div>
+                            <div class="custom-select-item" data-value="linked">Place Linked</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-header-row mb-4" id="autoInsertRow">
+                    <div class="label-tiny" data-t="auto_insert">Auto-Insert Result</div>
+                    <input type="checkbox" id="autoInsertResultCheckbox" class="toggle-switch">
+                </div>
+
+                <div class="card-header-row mb-4" id="smartLoaderRow">
+                    <div class="label-tiny label-pro" data-t="smart_loader_mode">Smart-Loader</div>
+                    <input type="checkbox" id="smartLoaderModeCheckbox" class="toggle-switch">
+                    <div class="tip mt-6" data-t="smart_loader_mode_tip">
+                        * If multiple Load nodes (>2) are present, merge them to share a single image frame.
+                    </div>
+                </div>
+
+                <div class="card-header-row mb-4" id="draftResRow">
+                    <div class="label-tiny" data-t="draft_resolution">Draft Mode Resolution</div>
+                    <div class="custom-select-container global-setting-control" id="draftResolutionSelect"
+                        style="width: 100px; flex: none;">
+                        <div class="custom-select-trigger">1024 px</div>
+                        <div class="custom-select-menu">
+                            <div class="custom-select-item" data-value="768">768 px</div>
+                            <div class="custom-select-item" data-value="1024">1024 px</div>
+                            <div class="custom-select-item" data-value="1280">1280 px</div>
+                            <div class="custom-select-item" data-value="1536">1536 px</div>
+                        </div>
+                    </div>
+                    <div class="tip mt-6" data-t="draft_limit_tip">
+                        * When Draft Mode is enabled (Model toggle), images are captured at this resolution limit.
+                    </div>
+                </div>
+
+                <div class="card-header-row mb-4" id="uploadFormatRow">
+                    <div class="label-tiny label-pro" data-t="upload_format">Upload Image Format</div>
+                    <div class="custom-select-container global-setting-control" id="uploadFormatSelect">
+                        <div class="custom-select-trigger">PNG (Standard)</div>
+                        <div class="custom-select-menu">
+                            <div class="custom-select-item" data-value="png" data-t="format_png_standard">PNG (Standard)
+                            </div>
+                            <div class="custom-select-item" data-value="webp" data-t="format_webp_fast">WebP (Fast)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip mt-6" data-t="upload_format_tip">
+                        * WebP drastically reduces file size and upload time. Non-Pro defaults to PNG.
+                    </div>
+                </div>
+
+                <!-- Prompt AI / Translate Service Settings -->
+                <div class="card-header-row mb-4" id="translateServiceRow">
+                    <div class="label-tiny" data-t="prompt_ai_service">Prompt AI Service</div>
+                    <div class="custom-select-container global-setting-control" id="translateServiceSelect"
+                        style="width: 150px; flex: none;">
+                        <div class="custom-select-trigger" data-t="service_free_online_api">Free Online API</div>
+                        <div class="custom-select-menu">
+                            <div class="custom-select-item" data-value="cloud" data-t="service_free_online_api">Free
+                                Online API</div>
+                            <div class="custom-select-item" data-value="custom" data-t="service_custom_local">Custom /
+                                Local</div>
+                        </div>
+                    </div>
+                    <div class="tip mt-6" data-t="prompt_ai_service_tip">
+                        * Free Online API: Powered by Index-Translate-35B-A3B. Pro unlocks Multimodal Vision prompt
+                        enhancement based on active reference images.
+                    </div>
+                </div>
+                <div id="customTranslateConfigArea" class="mb-4"
+                    style="display: none; padding: 8px 10px; background: rgba(0,0,0,0.15); border-radius: 6px; border: 1px solid var(--border-color, rgba(255,255,255,0.08));">
+                    <div class="mb-2">
+                        <div class="label-tiny mb-1" style="font-size: 10px; opacity: 0.8;" data-t="api_endpoint">API
+                            Endpoint</div>
+                        <input type="text" id="translateApiUrlInput" class="tool-param-input"
+                            placeholder="http://127.0.0.1:8000/v1/chat/completions"
+                            style="width: 100%; font-size: 11px;">
+                    </div>
+                    <div class="mb-2">
+                        <div class="label-tiny mb-1" style="font-size: 10px; opacity: 0.8;" data-t="api_key_auth">API
+                            Key (Authorization)</div>
+                        <input type="password" id="translateApiKeyInput" class="tool-param-input" placeholder="sk-..."
+                            style="width: 100%; font-size: 11px;">
+                    </div>
+                    <div class="mb-2">
+                        <div class="label-tiny mb-1" style="font-size: 10px; opacity: 0.8;" data-t="model_name">Model
+                            Name</div>
+                        <input type="text" id="translateModelInput" class="tool-param-input"
+                            placeholder="Index-Translate-2B" style="width: 100%; font-size: 11px;">
+                    </div>
+                    <div
+                        style="display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 6px;">
+                        <span id="translateTestStatus" style="font-size: 10px; opacity: 0.7;"></span>
+                        <button type="button" class="action-btn secondary" id="testTranslateApiBtn"
+                            style="padding: 2px 10px; font-size: 11px;" data-t="test_connection">Test</button>
+                    </div>
+                </div>
+
+                <div class="card-header-row mb-4" id="mediaLibraryRow">
+                    <div class="label-tiny" data-t="media_library">Media Library Management</div>
+                    <button class="action-btn secondary" id="addLibraryPathBtn" data-action="add-library-path"
+                        data-t="browse" data-t-title="browse" title="Browse">Browse</button>
+                </div>
+                <div id="mediaLibraryList" class="library-list-container tip mb-6">
+                    <!-- Dynamically populated -->
+                </div>
+            </div> <!-- End of Global Settings Tab -->
+
+            <!-- Engine Settings Tab Content -->
+            <div class="settings-tab-content engine-only-settings" id="tabContent-engine" style="display: none;">
+                <!-- [Local only] Settings -->
+                <!-- Local ComfyUI Server URL Config -->
+
+                <div class="comfyui-only-settings card-header-row mb-4">
+                    <div class="label-tiny" data-t="layout">Layout</div>
+                    <div id="panelPositionToggle" class="toggle-group-small">
+                        <!-- Segmented control injected via renderer.js -->
+                    </div>
+                    <div class="tip mb-6" data-t="layout_tip">
+                        * Adjust the panel position in Photoshop.
+                    </div>
+                </div>
+                <div class="comfyui-only-settings card-header-row mb-4" id="smartPreviewerModeRow">
+                    <div class="label-tiny label-pro" data-t="smart_previewer_mode">Smart Previewer</div>
+                    <input type="checkbox" id="smartPreviewerModeCheckbox" class="toggle-switch">
+                    <div class="tip mt-6" data-t="smart_previewer_mode_tip">
+                        * Merge all Preview Image nodes into a single dynamically updating preview strip.
+                    </div>
+                </div>
+                <div class="comfyui-only-settings card-header-row mb-4" id="comfyAutoReturnRow">
+                    <div class="label-tiny" data-t="comfy_auto_return">Always output to PS</div>
+                    <input type="checkbox" id="comfyAutoReturnCheckbox" class="toggle-switch">
+                    <div class="tip mt-6" data-t="comfy_auto_return_tip">
+                        * When enabled, results from running workflows directly in ComfyUI are automatically shown in
+                        the panel and sent to Photoshop (if Auto-Insert is on).
+                    </div>
+                </div>
+                <div class="comfyui-only-settings card-header-row mb-4">
+                    <div class="label-tiny" data-t="user_config">User Config</div>
+                    <div class="header-flex-row" style="gap: 8px;">
+                        <button class="action-btn secondary" id="openUserConfigBtn" data-action="open-user-config"
+                            data-t="user_config_edit" data-t-title="user_config_edit">Edit</button>
+                        <button class="action-btn primary" id="reloadUserConfigBtn" data-action="reload-user-config"
+                            data-t="user_config_reload_apply" data-t-title="user_config_reload_apply">Apply</button>
+                    </div>
+                </div>
+                <div class="tip mb-6 comfyui-only-settings" data-t="user_config_tip">
+                    * user_config.js is used to add custom node parsing support. Click "Edit" to modify it, then
+                    "Reload & Apply" to enforce changes.
+                </div>
+                <!-- [Cloud Engine] Account Management — fields injected by renderCredentialForm() -->
+                <div class="cloud-engine-only-settings" id="cloudAccountSection">
+                    <div class="card-header-row mb-8" data-t="account_management">Account Management</div>
+                    <div class="account-card">
+                        <div id="accountCredentialForm">
+                            <!-- Populated dynamically by renderCredentialForm() on engine switch -->
+                        </div>
+                        <div class="account-items bizyair-only-settings" id="bizyairManageAccountsList"></div>
+                        <div class="account-items runninghub-only-settings" id="runninghubManageAccountsList"></div>
+                    </div>
+                </div>
+                <!-- [Cloud App Management] Settings (BizyAir, Runninghub...) -->
+                <div class="cloud-engine-only-settings card-header-row mb-8" id="cloudAppSection">
+                    <div id="toolManageTitle" data-t="tool_management">App Management</div>
+                    <div class="header-flex-row">
+                        <div class="pos-relative dropdown-container bizyair-only-settings" id="forkedToolsBtnWrap">
+                            <button class="icon-btn" id="forkedToolsBtn" data-action="sync-forked-tools"
+                                data-t-title="sync_forked_apps" title="Sync my forked apps">
+                                <svg class="icon-tw-14">
+                                    <use href="#icon-fork" />
+                                </svg>
+                            </button>
+                            <div id="forkedToolsDropdown" class="dropdown-menu"></div>
+                        </div>
+                        <div class="pos-relative dropdown-container bizyair-only-settings" id="publishedToolsBtnWrap">
+                            <button class="icon-btn" id="publishedToolsBtn" data-action="sync-tools"
+                                data-t-title="sync_apps_server" title="Sync my apps from server">
+                                <svg class="icon-tw-14">
+                                    <use href="#icon-private" />
+                                </svg>
+                            </button>
+                            <div id="publishedToolsDropdown" class="dropdown-menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="savedToolsList" class="cloud-engine-only-settings"></div>
+
+                <!-- [Cloud NanoBanana only] Settings -->
+                <div class="nanobanana-only-settings mb-4">
+                    <div class="inline-form mb-4">
+                        <div class="custom-select-container global-setting-control" id="nanoBananaUrlSelect"
+                            style="flex: 1;">
+                            <div class="custom-select-trigger">Official Google API</div>
+                            <div class="custom-select-menu" id="nanoBananaDropdownMenu">
+                                <div class="custom-select-item selected"
+                                    data-value="https://generativelanguage.googleapis.com">Official Google API</div>
+                                <div class="custom-select-item" data-value="custom">+ Add Custom API</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline-form mb-4" id="nanoBananaCustomUrlContainer">
+                        <input type="text" id="nanoBananaUrlInput" class="input-control"
+                            data-t-placeholder="nanobanana_url_placeholder"
+                            placeholder="https://api.example.com/v1beta/models...">
+                    </div>
+                    <div class="inline-form mb-4">
+                        <input type="password" id="nanoBananaKeyInput" class="input-control"
+                            data-t-placeholder="enter_api_key" placeholder="Enter API Key...">
+                    </div>
+                    <div class="inline-form mb-4" id="nanoBananaFormatContainer">
+                        <div class="custom-select-container global-setting-control" id="nanoBananaApiFormatSelect"
+                            style="flex: 1;">
+                            <div class="custom-select-trigger">Gemini Native (/v1beta)</div>
+                            <div class="custom-select-menu">
+                                <div class="custom-select-item selected" data-value="gemini">Gemini Native (/v1beta)
+                                </div>
+                                <div class="custom-select-item" data-value="openai">OpenAI Compatible (/v1/chat)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline-form mb-4" id="nanoBananaAliasContainer">
+                        <input type="text" id="nanoBananaAliasInput" class="input-control"
+                            data-t-placeholder="nanobanana_alias_placeholder"
+                            placeholder="My Private Server (Optional)">
+                    </div>
+                    <!-- Unified NanoBanana Parameter Configuration Table -->
+                    <div id="nanoBananaParamTableSection" class="mb-8" style="display: none;">
+                        <label class="label-tiny mb-4" style="display: block;"
+                            data-t="nanobanana_params_config">Parameter
+                            Configuration (Aliases & Toggles):</label>
+                        <div id="nbParamTableHeader"
+                            style="display:flex; font-size:10px; font-weight:bold; color:var(--text-secondary); padding:4px 0; border-bottom:1px solid var(--border-color); align-items:center;">
+                            <div style="flex:1;">Param Name</div>
+                            <div style="flex:1.2; padding-left:4px;">Mapping Alias (Opt)</div>
+                            <div style="width:40px; text-align:center;">Active</div>
+                        </div>
+                        <div id="nanoBananaParamTableBody" style="max-height: 300px; overflow-y: auto;">
+                            <!-- Dynamically populated by BackendManager.renderNanoBananaParamTable -->
+                        </div>
+                        <div class="tip mt-6" data-t="capabilities_tip">
+                            * Customize parameter names for proxy compatibility and toggle their visibility.
+                        </div>
+                    </div>
+                    <div id="nanoBananaCustomModelsSection" style="display: none;">
+                        <div class="inline-form mb-6" id="nanoBananaCustomModelsContainer"
+                            style="justify-content: space-between; align-items: center;">
+                            <label class="label-tiny" data-t="nanobanana_models">Models (Opt):</label>
+                            <button class="action-btn secondary" id="addNanoBananaModelBtn"
+                                data-action="add-nanobanana-model" data-t="add">Add</button>
+                        </div>
+                        <div id="nanoBananaModelInputsContainer">
+                            <div style="display:flex; gap:6px; ">
+                                <input type="text" id="nanoBananaModelNameInput" class="input-control"
+                                    data-t-placeholder="model_name_placeholder" placeholder="Name (e.g. My Pro Model)"
+                                    style="flex:1;">
+                                <input type="text" id="nanoBananaModelIdInput" class="input-control"
+                                    data-t-placeholder="model_id_placeholder" placeholder="ID (e.g. gemini-3.0-pro)"
+                                    style="flex:1;">
+                            </div>
+                            <div id="nanoBananaModelsList" class="library-list-container tip" style="min-height:32px;">
+                                <!-- Dynamically populated by renderNanoBananaModelsList -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Engine Settings Tab -->
+            <div class="action-btn-group mb-4 mt-8">
+                <button class="action-btn secondary nanobanana-only-settings" id="deleteNanoBananaBtn"
+                    data-action="delete-nanobanana" data-t="delete"
+                    title="Delete Current NanoBanana Server">Delete</button>
+                <button class="action-btn secondary" id="exportSettingsBtn" data-action="export-settings"
+                    data-t="export_settings" title="Export Settings">Export</button>
+                <button class="action-btn secondary" id="importSettingsBtn" data-action="import-settings"
+                    data-t="import_settings" title="Import Settings">Import</button>
+                <button class="action-btn primary" id="saveSettingsBtn" data-action="save-settings" data-t="save"
+                    title="Save Settings">Save</button>
+            </div>
+        </section>
+
+        <!-- 2. Home Tool List View -->
+        <section class="tool-list-section" id="toolListSection" style="display: none;">
+            <!-- [NEW] Active Workflow List: displays Internal and External active workflows -->
+            <div id="activeWorkflowBar" class="active-workflow-bar comfyui-only-settings">
+                <div class="active-workflow-list" id="activeWorkflowList">
+                    <div class="active-workflow-item" id="cwItemInternal" data-source="internal"
+                        title="Embedded WebView ComfyUI active workflow" data-t-title="open_internal_workflow_title">
+                        <div class="cw-info">
+                            <span class="cw-source-badge internal">Embedded</span>
+                            <span class="cw-name" id="cwInternalName">No workflow loaded</span>
+                        </div>
+                        <span class="cw-check" id="cwCheckInternal">✓</span>
+                    </div>
+                    <div class="active-workflow-item" id="cwItemExternal" data-source="external"
+                        title="System Browser ComfyUI active workflow" data-t-title="open_external_workflow_title">
+                        <div class="cw-info">
+                            <span class="cw-source-badge external">External</span>
+                            <span class="cw-name" id="cwExternalName">No workflow loaded</span>
+                        </div>
+                        <span class="cw-check" id="cwCheckExternal">✓</span>
+                    </div>
+                </div>
+                <div class="cw-actions" title="Open Workflow File" data-t-title="open_workflow">
+                    <input type="file" id="openWorkflowFileInput" accept=".json" style="display:none;">
+                    <button class="icon-btn" id="openWorkflowBtn">
+                        <svg class="icon-tw-18">
+                            <use href="#icon-folder-link" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="toolListContent"></div>
+        </section>
+
+        <!-- 3. Execution View -->
+        <section class="execution-section" id="executionSection" style="display: none;">
+            <!-- ComfyUI Server & Bridge Source Selection Bar -->
+            <div class="comfyui-only-settings server-selection-bar">
+                <svg class="icon-tw-24">
+                    <use href="#icon-comfyui-square"></use>
+                </svg>
+                <div class="custom-select-container" id="ComfyuiBridgeSourceSelect">
+                    <div class="custom-select-trigger"><span class="select-trigger-text">Embedded WebView</span></div>
+                    <div class="custom-select-menu" style="min-width: 140px;">
+                        <div class="custom-select-item selected" data-value="internal">Embedded WebView</div>
+                        <div class="custom-select-item" data-value="external">System Browser</div>
+                    </div>
+                </div>
+                <div class="custom-select-container" id="ComfyuiServerSelect" style="max-width: fit-content;">
+                    <div class="custom-select-trigger"><span class="select-trigger-text">Local GPU</span></div>
+                    <div class="custom-select-menu" style="min-width: 130px; max-width: 250px;">
+                        <!-- Populated dynamically via renderer.js -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-header">
+                <div class="header-flex-container">
+                    <div id="currentToolName" class="m-0" data-t="untitled_tool">Tool Name</div>
+                    <div id="currentToolId" class="label-tiny muted" style="font-size: 10px; opacity: 0.7;">ID: Unknown
+                    </div>
+                    <div class="header-actions">
+                        <button class="icon-btn" id="deleteCurrentResultBtn" data-action="delete-current-result"
+                            style="display: none;" title="Delete Current Result" data-t-title="delete_current_result">
+                            <svg class="icon-tw-14">
+                                <use href="#icon-trash" />
+                            </svg>
+                        </button>
+                        <button class="icon-btn" id="deleteAllResultsBtn" data-action="delete-all-results"
+                            style="display: none;" title="Clear All History" data-t-title="clear_all_history">
+                            <svg class="icon-tw-14">
+                                <use href="#icon-broom" />
+                            </svg>
+                        </button>
+                        <button class="icon-btn history-btn-styled" id="showHistoryBtn" data-action="show-history"
+                            data-t-title="load_history" title="Load history">
+                            <svg class="icon-tw-15">
+                                <use href="#icon-history" />
+                            </svg>
+                        </button>
+                        <button class="icon-btn" id="reloadWorkflowBtn" data-action="reload-workflow"
+                            data-t-title="reload_workflow" title="Reload workflow file">
+                            <svg class="icon-tw-15">
+                                <use href="#icon-sync" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Progress Overlay -->
+            <!-- Result Preview with Carousel -->
+            <div id="resultStickySection" class="result-preview-area card d-none" style="display: none;">
+                <div class="result-preview-container">
+                    <div class="filter-group pos-absolute-top-left z-10" id="historyFilterGroup">
+                        <button class="filter-btn" data-filter="image" data-t-title="show_img_only"
+                            title="Show image results only">IMG</button>
+                        <button class="filter-btn" data-filter="video" data-t-title="show_vid_only"
+                            title="Show video results only">VID</button>
+                        <button class="filter-btn" data-filter="audio" data-t-title="show_aud_only"
+                            title="Show audio results only">AUD</button>
+                        <button class="filter-btn" data-filter="model3d" title="Show 3D model results only">3D</button>
+                    </div>
+                    <div class="result-header-actions pos-absolute-top-right z-10">
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-nav prev" id="prevResultBtn" data-action="prev-result">
+                        <svg class="icon-tw-20">
+                            <use href="#icon-prev" />
+                        </svg>
+                    </button>
+                    <div class="result-preview-box media-preview-box is-result-mode" id="resultPreviewBox">
+                        <div class="empty-state-text" id="resultPreviewEmptyText" data-t="result_preview">Result Preview
+                        </div>
+                        <div class="media-preview-container">
+                            <video class="preview-video" id="resultPreviewVideo" src="" autoplay loop
+                                playsinline></video>
+                            <audio class="preview-audio" id="resultPreviewAudio" src="" loop controls></audio>
+                            <div id="resultPreviewAudioPlaceholder" class="preview-audio-placeholder">
+                                <svg class="icon-tw-24">
+                                    <use href="#icon-audio"></use>
+                                </svg>
+                                <span class="audio-name-label" id="resultAudioLabel" data-t="result_audio">Result
+                                    Audio</span>
+                            </div>
+
+                            <!-- 3D Model Preview — Three.js WebGL Viewer -->
+                            <div id="resultPreview3DContainer"
+                                style="display:none;position:absolute;inset:0;overflow:hidden;"></div>
+
+                            <!-- Unified Media Controls Overlay (For Progress) -->
+                            <div class="media-controls-overlay">
+                                <div class="media-track">
+                                    <div class="media-progress-bar" id="resultProgressBar"></div>
+                                </div>
+                                <!-- Inline actions for video/audio -->
+                                <button class="media-control-btn v-only icon-only" id="vBtnCapture"
+                                    data-action="capture-frame" data-t-title="capture_frame" title="Capture Frame">
+                                    <svg class="icon-tw-14">
+                                        <use href="#icon-image" />
+                                    </svg>
+                                </button>
+                                <button class="media-control-btn va-only icon-only" id="saveAsMediaBtn"
+                                    data-action="save-as-media" data-t-title="save_as_media" title="Save As...">
+                                    <svg class="icon-tw-14">
+                                        <use href="#icon-save" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Result Actions (Placement Icons Group) -->
+                        <div class="result-actions-floating placement-group image-controls i-only" id="resultActions">
+                            <button class="control-btn icon-only" id="applyCanvasBtn" data-action="apply-canvas"
+                                data-t-title="apply_to_canvas" title="Fit to Canvas | ⇧ Original Size (No stretching)">
+                                <svg class="icon-tw-13">
+                                    <use href="#icon-to-canvas" />
+                                </svg>
+                            </button>
+                            <button class="control-btn icon-only" id="applySelectionBtn" data-action="apply-selection"
+                                data-t-title="apply_to_selection" title="Fit to Selection | ⇧ Fit to Layer Bounds">
+                                <svg class="icon-tw-13">
+                                    <use href="#icon-to-area" />
+                                </svg>
+                            </button>
+                            <button class="control-btn icon-only" id="applyNewDocBtn" data-action="apply-newdoc"
+                                data-t-title="create_new_doc" title="Create New Document">
+                                <svg class="icon-tw-13">
+                                    <use href="#icon-to-newdoc" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Page Indicator -->
+                    <div class="carousel-indicator" id="carouselIndicator">1 / 1</div>
+                    <button class="carousel-nav next" id="nextResultBtn" data-action="next-result">
+                        <svg class="icon-tw-20">
+                            <use href="#icon-next" />
+                        </svg>
+                    </button>
+                </div> <!-- end of result-preview-container -->
+                <div class="result-text-container" id="resultTextContainer" style="display: none;">
+                    <textarea id="resultTextValue" class="result-text-area" readonly
+                        placeholder="Text result..."></textarea>
+                </div>
+
+            </div> <!-- end of resultStickySection -->
+            <div class="execution-content-scroll">
+
+                <div class="params-container card">
+                    <div id="toolParamsContent"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Progress & Logs -->
+    <footer class="footer execution-footer">
+        <div class="log-drawer" id="logDrawer">
+            <div class="log-content-wrapper">
+                <div class="log-content" id="logContent"></div>
+            </div>
+            <div class="log-drawer-header" id="logDrawerHeader" data-action="toggle-logs"
+                data-t-title="click_toggle_logs" title="Click to toggle logs">
+                <button class="icon-btn mr-8" id="clearLogsBtn" data-action="clear-logs" data-t-title="clear_logs"
+                    title="Clear Logs">
+                    <svg class="icon-tw-14">
+                        <use href="#icon-trash" />
+                    </svg>
+                </button>
+                <div id="logDrawerChevron">
+                    <svg class="icon-tw-12">
+                        <use href="#icon-up" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="footer-actions">
+            <!-- [NEW] ComfyUI Style Run Button Group -->
+            <div class="run-group" id="runGroup" data-t-title="select_workflow_first"
+                title="Please select a workflow first">
+                <button class="run-btn primary" id="runBtn" data-action="run-task" disabled>
+                    <svg class="icon-tw-14">
+                        <use href="#icon-run-regular" />
+                    </svg>
+                    <span data-t="run">Run</span>
+                </button>
+                <div class="run-mode-dropdown">
+                    <button class="run-mode-toggle" id="runModeToggle" disabled>
+                        <svg class="icon-tw-14">
+                            <use href="#icon-down" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu will be populated via CSS/JS -->
+                </div>
+                <div class="batch-counter">
+                    <input type="number" id="batchCountInput" class="batch-input" value="1" min="1" max="10000"
+                        disabled>
+                    <div class="batch-controls">
+                        <button class="batch-up" id="batchUpBtn" data-action="batch-count-up" disabled><svg
+                                class="icon-tw-10">
+                                <use href="#icon-up" />
+                            </svg></button>
+                        <button class="batch-down" id="batchDownBtn" data-action="batch-count-down" disabled><svg
+                                class="icon-tw-10">
+                                <use href="#icon-down" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+            <button class="stop-btn secondary d-none" id="stopBtn" data-action="stop-task" data-t-title="stop"
+                title="Stop Task" style="display: none;">
+                <svg class="icon-tw-18">
+                    <use href="#icon-stop" />
+                </svg>
+            </button>
+        </div>
+    </footer>
+    <script src="js/ui/primitives.js"></script>
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/state.js"></script>
+    <script src="js/core/i18n.js"></script>
+    <script src="js/core/photocraft_sdk.js"></script>
+    <script src="js/core/photocraft_bridge.js"></script>
+    <script src="js/core/uxp_bridge.js"></script>
+    <script src="js/core/turbo_bridge.js"></script>
+    <script src="js/core/http_client.js"></script>
+    <!-- user_config is dynamically hydrated via ComfyUI API (/comfypanel/user_config) in init.js / tool_manager.js -->
+    <script src="js/core/prompts_manager.js"></script>
+    <script src="js/core/translate_service.js"></script>
+    <script src="js/engines/cloud_bizyair_api.js"></script>
+    <script src="js/engines/cloud_runninghub_api.js"></script>
+    <script src="js/engines/cloud_nanobanana_api.js"></script>
+    <script src="js/core/widget_schema.js"></script>
+    <script src="js/core/widget_store.js"></script>
+    <script src="js/engines/comfyui_api.js"></script>
+    <script src="js/engines/comfyui_engine.js"></script>
+    <script src="js/core/bridge_manager.js"></script>
+    <script src="js/core/bridge_listener.js"></script>
+    <script src="js/core/task_executor.js"></script>
+    <script src="js/adapters/cloud_bizyair_adapter.js"></script>
+    <script src="js/adapters/cloud_runninghub_adapter.js"></script>
+    <script src="js/adapters/cloud_bizyair_modelzoo_adapter.js"></script>
+    <script src="js/adapters/cloud_runninghub_modelzoo_adapter.js"></script>
+    <script src="js/adapters/cloud_nanobanana_adapter.js"></script>
+    <script src="js/adapters/comfyui_adapter.js"></script>
+    <script src="js/ui/renderer.js"></script>
+    <script src="js/ui/lora_selector.js"></script>
+    <script src="js/ui/history.js"></script>
+    <script src="js/ui/pano_viewer.js"></script>
+    <script src="js/ui/model3d_viewer.js"></script>
+    <script src="js/ui/notifications.js"></script>
+    <script src="js/core/supabase_manager.js"></script>
+    <script src="js/core/auth_manager.js"></script>
+    <script src="js/core/tool_manager.js"></script>
+    <script src="js/ui/preview_manager.js"></script>
+    <script src="js/core/config_manager.js"></script>
+    <script src="js/core/sync_manager.js"></script>
+    <script src="js/core/backend_manager.js"></script>
+    <script src="js/core/init.js"></script>
+
+    <!-- Pro Pricing Modal -->
+    <div id="pricing-modal" class="modal-overlay">
+        <div class="pricing-card card">
+            <div class="modal-close-top" onclick="document.getElementById('pricing-modal').classList.remove('visible')">
+                <svg class="icon-tw-18">
+                    <use href="#icon-x" />
+                </svg>
+            </div>
+
+            <div class="pricing-header">
+                <div class="pricing-logo">
+                    <div class="pricing-logo-box"><img src="../icons/ComfyPanel.svg" alt="ComfyPanel">
+                    </div>
+                </div>
+                <div class="pricing-title-group">
+                    <span><span style="color: var(--brand-primary); font-weight: 700;">Comfy</span><span
+                            style="color: #fff; font-weight: 400;">Panel</span> Pro</span>
+                    <p class="subtitle" data-t="pricing_membership">Membership</p>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Left: Feature List -->
+                <div class="feature-col">
+                    <p class="pricing-intro" data-t="pricing_intro">Unlock the full power of ComfyPanel. Upgrade to Pro
+                        and elevate your workflow.</p>
+
+                    <!-- Row 1: AnyPreviewPause -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box recovery-icon">
+                            <svg class="icon-tw-16">
+                                <use href="#icon-pause" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_pause_title">AnyPreviewPause Workflow</strong>
+                            <span data-t="feature_pause_desc">Pause, re-paint mask/text, and resume.</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Draft Mode & Smart Layout -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box relay-icon">
+                            <svg class="icon-tw-16">
+                                <use href="#icon-mode-product" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_layout_title">Draft Mode & Smart Layout</strong>
+                            <span data-t="feature_layout_desc">Instant preview iterations & capsule layout.</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Unlimited Res & Results -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box limit-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tw-16"
+                                style="width: 16px; height: 16px; display: block; margin: auto;">
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_limit_title">Unlimited Results & Res</strong>
+                            <span data-t="feature_limit_desc">Bypass 2000px limit & view all outputs.</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Upload Image Format -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <svg class="icon-tw-16">
+                                <use href="#icon-image" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_upload_format_title">Upload Image Format</strong>
+                            <span data-t="feature_upload_format_desc">WebP upload cuts file size & transfer time.</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Video & Audio -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box media-icon">
+                            <svg class="icon-tw-16">
+                                <use href="#icon-video" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_media_title">Video & Audio Support</strong>
+                            <span data-t="feature_media_desc">Unlock LoadVideo, LoadAudio & local export.</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 6: Multimodal Vision & Selection Mask -->
+                    <div class="feature-item">
+                        <div class="feature-icon-box prompt-icon"
+                            style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
+                            <svg class="icon-tw-16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong data-t="feature_vision_title">Vision Context & Mask</strong>
+                            <span data-t="feature_vision_desc">Multimodal reference images & dynamic selection
+                                masks.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle: Free Plan -->
+                <div class="plan-col free-plan">
+                    <div class="price-items">
+                        <h3 data-t="plan_free">Free</h3>
+                        <div class="price">$0<span data-t="plan_forever">Forever</span></div>
+                    </div>
+                    <div class="plan-checks">
+                        <!-- Row 1: AnyPreviewPause -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_pause_status">Static execution only</span>
+                            <div class="check-item x-mark">✕</div>
+                        </div>
+                        <!-- Row 2: Draft Mode & Smart Layout -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_layout_status">Standard tiled layout</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 3: Unlimited Results & Res -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_limit_status">3 results & 2K limit</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 4: Upload Image Format -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_upload_format_status">PNG only</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 5: Video & Audio -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_media_status">Image only (LoadImage)</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 6: Multimodal Vision & Selection Mask -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="free_vision_status">Text-only prompt enhance</span>
+                            <div class="check-item x-mark">✕</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-col divider-col">
+                    <div class="plan-checks">
+                        <div class="plan-checks-item"></div>
+                        <div class="plan-checks-item"></div>
+                        <div class="plan-checks-item"></div>
+                        <div class="plan-checks-item"></div>
+                        <div class="plan-checks-item"></div>
+                        <div class="plan-checks-item"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Pro Plan -->
+                <div class="plan-col pro-plan active">
+                    <div class="best-value" data-t="plan_best_value">★ BEST VALUE</div>
+                    <div class="price-items">
+                        <h3 data-t="plan_pro">Pro</h3>
+                        <div class="price">$9<span data-t="plan_per_month">/ month</span></div>
+                        <p class="billed-tag" data-t="plan_billed_monthly">Billed monthly</p>
+                    </div>
+                    <div class="plan-checks">
+                        <!-- Row 1: AnyPreviewPause -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_pause_status">Interactive re-edit</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 2: Draft Mode & Smart Layout -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_layout_status">Draft mode & capsule UI</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 3: Unlimited Results & Res -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_limit_status">Unlimited size & outputs</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 4: Upload Image Format -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_upload_format_status">WebP (Fast)</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 5: Video & Audio -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_media_status">Full video & audio</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                        <!-- Row 6: Multimodal Vision & Selection Mask -->
+                        <div class="plan-checks-item">
+                            <span class="plan-info" data-t="pro_vision_status">Multimodal Vision & Mask</span>
+                            <div class="check-item check-mark">✓</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-footer">
+                <button class="btn-checkout" id="CheckoutBtn">
+                    <div class="pay-icon"><img src="assets/icon-card.svg" alt="Card"></div>
+                    <div class="pay-text">
+                        <strong data-t="checkout">Checkout</strong>
+                        <span data-t="checkout_sub">Credit / Debit Card</span>
+                    </div>
+                </button>
+                <button class="btn-aifadian" id="payAfdianBtn">
+                    <div class="pay-icons-row">
+                        <div class="pay-icon alipay-logo"><img src="assets/icon-alipay.svg" alt="Alipay"></div>
+                        <div class="pay-icon wechat-logo"><img src="assets/icon-wechat.svg" alt="WeChat"></div>
+                    </div>
+                    <div class="pay-text">
+                        <strong data-t="pay_aifadian">Alipay / WeChat</strong>
+                        <span data-t="pay_aifadian_sub">Scan to pay securely</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Member Auth Modal -->
+    <div id="auth-modal" class="modal-overlay">
+        <div class="pricing-card auth-card" style="max-width: 320px; width: 100%; box-sizing: border-box;">
+            <div class="modal-close-top" onclick="document.getElementById('auth-modal').classList.remove('visible')">
+                <svg class="icon-tw-18">
+                    <use href="#icon-x" />
+                </svg>
+            </div>
+            <div id="authModalContent">
+                <!-- Dynamically rendered auth form by Renderer.renderMemberCenter() -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Channels Modal -->
+    <div id="feedback-modal" class="modal-overlay">
+        <div class="pricing-card card" style="max-width: 320px; width: 100%; box-sizing: border-box;">
+            <div class="modal-close-top"
+                onclick="document.getElementById('feedback-modal').classList.remove('visible')">
+                <svg class="icon-tw-18">
+                    <use href="#icon-x" />
+                </svg>
+            </div>
+            <div class="feedback-modal-content" style="padding: 12px 6px;">
+                <h3 class="gradient-text"
+                    style="margin-top: 0; margin-bottom: 8px; font-size: 16px; text-align: center;"
+                    data-t="feedback_title">Feedback & Support</h3>
+                <p style="font-size: 12px; color: var(--text-secondary); text-align: center; margin-bottom: 20px;"
+                    data-t="feedback_desc">Choose a channel below to submit your feedback.</p>
+
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <button class="pay-btn primary feedback-btn" id="feedbackBlogBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="icon-tw-24"
+                            style="color: var(--color-primary);">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div class="pay-text">
+                            <strong style="font-size: 13px;" data-t="feedback_blog">Official Blog Feedback</strong>
+                            <span style="font-size: 11px; color: #606060;" data-t="feedback_blog_sub">No
+                                login needed, fast & easy</span>
+                        </div>
+                    </button>
+
+                    <button class="pay-btn feedback-btn feedback-github-btn" id="feedbackGithubBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="icon-tw-24"
+                            style="color: var(--text-muted);">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        <div class="pay-text">
+                            <strong style="font-size: 13px;color:#fff" data-t="feedback_github">GitHub Issues</strong>
+                            <span style="font-size: 11px; color: #868686;" data-t="feedback_github_sub">For bugs and
+                                developer discussion</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 360° VR 全景查看器覆盖层 -->
+    <div id="pano-viewer-overlay">
+        <!-- 顶部工具栏 -->
+        <div id="pano-viewer-toolbar">
+            <div id="pano-viewer-title">
+                <span class="pano-label-360">360°</span>
+                <span id="pano-viewer-title-text">Panorama</span>
+            </div>
+            <!-- 比例选择器 -->
+            <div class="custom-select-container" id="panoRatioSelect" data-value="auto" title="Aspect Ratio">
+                <div class="custom-select-trigger"><span class="select-trigger-text">Auto</span></div>
+                <div class="custom-select-menu">
+                    <div class="custom-select-item selected" data-value="auto">Auto</div>
+                    <div class="custom-select-item" data-value="16:9">16 : 9</div>
+                    <div class="custom-select-item" data-value="3:2">3 : 2</div>
+                    <div class="custom-select-item" data-value="4:3">4 : 3</div>
+                    <div class="custom-select-item" data-value="1:1">1 : 1</div>
+                    <div class="custom-select-item" data-value="3:4">3 : 4</div>
+                    <div class="custom-select-item" data-value="2:3">2 : 3</div>
+                    <div class="custom-select-item" data-value="9:16">9 : 16</div>
+                </div>
+            </div>
+            <!-- 截图到新文档 -->
+            <button id="pano-screenshot-btn" onclick="window.PanoViewer && window.PanoViewer.screenshotToNewDoc()"
+                data-t-title="create_new_doc" title="Send Panorama to New Document">
+                <svg width="14" height="14" viewBox="0 0 56.87 44.62" fill="currentColor">
+                    <use href="#icon-to-newdoc" />
+                </svg>
+            </button>
+            <button id="pano-viewer-close" onclick="window.PanoViewer && window.PanoViewer.close()" title="Close (ESC)">
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round">
+                    <line x1="1" y1="1" x2="13" y2="13" />
+                    <line x1="13" y1="1" x2="1" y2="13" />
+                </svg>
+            </button>
+        </div>
+        <!-- canvas 区域 + 提示 -->
+        <div id="pano-viewer-body">
+            <!-- Three.js canvas 挂载点 -->
+            <div id="pano-viewer-canvas-container"></div>
+            <!-- 操作提示 -->
+            <div id="pano-viewer-hint">Drag to look around &nbsp;·&nbsp; Scroll to zoom &nbsp;·&nbsp; ESC to exit</div>
+        </div>
+    </div>
+
+    <!-- Active Workflow Bar: logic for click-to-enter and open-from-disk -->
+    <script>
+function _0x547a(e,n){return e-=382,_0x8681()[e]}function _0x2fda(){const e=["8yzDBVJ","textContent","Failed to open workflow: ","getElementById","unknown","files","selectedTool","Active Workflow","Open workflow error: ","1227072yJpvTY","none","ComfyUI bridge not ready.","active","6MFyYEn","file_path","ext_browser_disconnected","setBridgeSource","switchSection","2816320KHIYOX","cwItemExternal","DOMContentLoaded","cwExternalName","BridgeManager","setBridgeActiveWorkflow","target","shift","name","message","active_workflow","Renderer","365015scBRAL","display","isTauri","cwInternalName","localWorkflows","onExtBrowserStatusChanged","cwCheckExternal","value","comfyui","13887iEhTfX","trim","56topAyr","openWorkflowBtn","internal",".custom-select-menu","executionSection","dataset","openWorkflowFileInput","click","14RZxKDD","syncToolUIs","9117031JQzxXA","Opening workflow: ","8004caKTGv","change","showToast","split","34264PFcLpR","querySelector","_bridgeActiveWorkflowId","1083300NMAmcU","3410830VSZMgc","stopPropagation","external","inline-block","selected","classList","tool_id","renderToolParams","addEventListener","text","remove","1641888PDXKrJ","20sBlJuA","ComfyuiBridgeSourceSelect","220870xzdUaa","62eDaLEf","addLog","getToolId","toggle","flex","System Browser disconnected, switched to Embedded WebView","No workflow loaded","activeWorkflowBar","error","style","68654DlMoaT","closest","270281xYGQCH","cwCheckInternal","querySelectorAll","_bound","alive","18OFqGNl","parse"];return(_0x2fda=function(){return e})()}function _0x28a6(e,n){e-=246;return _0x2fda()[e]}function _0x8681(){const e=_0x28a6,n=[e(286),e(271),e(257),e(300),e(263),e(275),e(320),e(333),e(295),"success","click",e(302),e(321),"cwItemInternal",e(261),e(338),"find",e(250),e(285),e(319),"open",e(303),e(327),e(249),"onInternalWorkflowStateChanged","isReady",e(337),e(315),"BridgeManager",e(332),e(331),".custom-select-item",e(256),e(280),e(281),e(306),e(277),"state",e(298),"pop",e(269),e(254),"bridgeSource",e(272),e(255),"warning",e(313),"alive",e(312),"info",e(307),e(253),"803130dKXYvj",e(308),e(335),e(273),"52NfVeIx","toolId",e(334),e(279),e(304),e(328),e(292),e(336),e(251),e(288),"openWorkflowObjInComfy","Embedded WebView",e(265),e(311),e(289),"45UrbkAq",e(329),e(296),"requestStateUpdate",e(274),".select-trigger-text","replace",e(299),e(305),e(252),e(262),e(259),e(324),e(314),e(293),e(258),e(270)];return(_0x8681=function(){return n})()}!function(){const e=_0x28a6,n=_0x2fda();for(;;)try{if(562404===parseInt(e(260))/1*(-parseInt(e(247))/2)+-parseInt(e(322))/3*(-parseInt(e(310))/4)+-parseInt(e(330))/5*(-parseInt(e(282))/6)+parseInt(e(318))/7*(-parseInt(e(326))/8)+-parseInt(e(267))/9*(-parseInt(e(287))/10)+parseInt(e(278))/11+-parseInt(e(246))/12)break;n.push(n.shift())}catch(e){n.push(n.shift())}}(),function(){const e=_0x28a6,n=_0x547a,o=_0x8681();for(;;)try{if(296647==-parseInt(n(463))/1+parseInt(n(399))/2*(parseInt(n(435))/3)+parseInt(n(438))/4*(-parseInt(n(405))/5)+-parseInt(n(454))/6+parseInt(n(460))/7*(-parseInt(n(422))/8)+parseInt(n(453))/9*(parseInt(n(434))/10)+parseInt(n(388))/11)break;o.push(o[e(294)]())}catch(n){o.push(o[e(294)]())}}(),function(){const e=_0x547a;function n(){const e=_0x28a6,n=_0x547a,o=document[n(425)](n(384)),t=document.getElementById(n(395)),r=document[e(272)](n(447)),i=document.getElementById(n(393)),c=document[n(425)](e(290)),a=document[n(425)](n(451)),w=document[n(425)](e(316)),d=document[n(425)](e(248));if(!(o&&t&&r&&a&&w))return;let s={name:e(256),toolId:""},l={name:n(414),toolId:"",alive:!1};function u(){const t=e,a=n;i&&(i[a(469)]=s.name||t(256)),c&&(c[a(469)]=l.name||t(256)),r&&(r[a(464)][t(300)]=l[a(429)]?a(423):a(441)),o[a(464)][a(385)]=a(423),f()}function f(o){const t=e,r=n;let i=o||window[r(410)]?.bridgeSource||t(312);l[r(429)]||"external"!==i||window[t(301)]||(i=r(430),window[r(410)]&&(window.BridgeManager[r(424)]=r(430)),window[r(465)]&&window.showToast(window.t?window.t(t(284)):r(426),r(427)));const c=i===r(411);if(d){const e=d[r(404)](r(458));e&&(e[r(469)]=c?"System Browser":r(449)),d[t(264)](r(413)).forEach(e=>{const n=t,o=r,c=e[n(315)][n(306)];e[o(436)][o(433)](o(440),c===i),c===o(411)&&(e[o(464)][o(385)]=l[o(429)]?"":o(441))})}const a=document[r(425)](r(386)),w=document[r(425)](r(461)),s=document[t(272)]("cwItemInternal"),u=document[r(425)](t(288));a&&(a[r(464)][r(385)]=r(c?441:389)),w&&(w[r(464)][r(385)]=c?r(389):t(279)),s&&s[r(436)][t(253)](t(281),!c),u&&u[r(436)][r(433)](r(416),c)}async function p(o){const t=e,r=n;window[r(410)]?.[t(285)]&&window[r(410)][r(400)](o),f(o);const i=t(332)===o?l:s,c=i[r(439)]||window[r(443)],a=window[r(419)];if(a){const e=(a[r(403)]||[])[r(398)](e=>{const n=t,o=r;return(window[o(462)]?window[o(462)](e):e[o(445)]||e.id)===c||e[n(283)]===c});a[r(387)]=e?{...e,_openedWithSource:o}:{tool_id:c||t(297),name:i[t(295)]||"Active Workflow",file_path:c||"",source:r(432),_openedWithSource:o,widgets:[],output_nodes:[],workflow:null},window[r(382)]&&window[r(382)](r(466)),window[r(420)]&&(window[r(420)][r(408)](a[r(387)]),window[r(420)][r(401)]&&window[r(420)][r(401)](a))}window[r(410)]?.[r(407)]&&window[t(291)][r(456)]()}d&&!d[n(450)]&&(d[n(450)]=!0,d[n(397)](n(392),o=>{const t=e,r=n,i=o[t(293)][r(396)](r(413));if(i){p(i[r(409)][r(417)]);const e=d[r(404)](r(428));e&&e[r(436)][t(340)](r(402))}})),t[e(338)](n(392),o=>{const t=n;o[e(331)](),p(t(430))}),r[e(338)](n(392),e=>{const o=n;e[o(412)](),p(o(411))}),window.setBridgeActiveWorkflow=function(o,t){const r=e,i=n,c=o===i(411)?l:s;if(t){const e=function(e){const o=_0x28a6,t=n;return e?String(e)[o(325)]("/")[t(421)]()[t(459)](/^\*+/,"")[t(459)](/\.json$/i,"")[o(309)]():""}(t[i(390)]);e&&r(276)!==e&&(c[i(390)]=e),t[i(439)]&&(c[i(439)]=t[i(439)]),void 0!==t[r(266)]&&(c[r(266)]=!!t[i(429)]),o===i(430)&&(window[i(443)]=c[i(439)],window._bridgeActiveWorkflowName=c[i(390)])}u()},window[n(442)]=e=>window[n(444)](n(411),e),window[n(406)]=(e,o)=>window[n(444)](n(430),{name:e,toolId:o,alive:!0}),a[n(397)](e(317),o=>{const t=e,r=n;o[r(412)](),window[r(410)]?.[r(407)]?w[r(392)]():window[r(446)]&&window[t(251)](r(415),r(427))}),w[e(338)](e(323),async o=>{const t=e,r=n,i=o[r(467)][r(457)]?.[0];if(i){w[r(417)]="";try{const e=await i[t(339)](),n=JSON[t(268)](e);window[r(446)]&&window[r(446)](r(394)+i[r(390)],r(431));const o=await window[r(410)][r(448)](n,i[r(390)]);o&&!o[r(391)]&&window[r(446)]&&window[r(446)](r(383)+(o[r(468)]||r(437)),t(258))}catch(e){window[r(446)]&&window[r(446)](r(418)+e[r(455)],r(468))}}}),u(),f(window[n(410)]?.[n(424)]||n(430))}"loading"===document.readyState?document[e(397)](e(452),n):n()}();
+</script>
+
+</body>
+
+</html>
