@@ -528,34 +528,32 @@ fn position_window_right(win: &WebviewWindow) {
     }
 }
 
+#[cfg(target_os = "macos")]
 fn start_lifecycle_tracker(app: AppHandle) {
     std::thread::spawn(move || {
         let mut last_visible = false;
         let mut pc_ever_ran = false;
         loop {
             std::thread::sleep(std::time::Duration::from_millis(300));
-            #[cfg(target_os = "macos")]
-            {
-                let running = is_photocraft_process_running();
-                if running {
-                    pc_ever_ran = true;
-                } else if pc_ever_ran {
+            let running = is_photocraft_process_running();
+            if running {
+                pc_ever_ran = true;
+            } else if pc_ever_ran {
 
-                    println!("[ComfyPanel] PhotoCraft process exited. Exiting ComfyPanel...");
-                    app.exit(0);
-                    break;
-                }
+                println!("[ComfyPanel] PhotoCraft process exited. Exiting ComfyPanel...");
+                app.exit(0);
+                break;
+            }
 
-                let active = is_photocraft_active();
-                if active != last_visible {
-                    last_visible = active;
-                    if let Some(win) = app.get_webview_window("main") {
-                        if active {
-                            let _ = win.show();
-                            let _ = win.set_always_on_top(true);
-                        } else {
-                            let _ = win.hide();
-                        }
+            let active = is_photocraft_active();
+            if active != last_visible {
+                last_visible = active;
+                if let Some(win) = app.get_webview_window("main") {
+                    if active {
+                        let _ = win.show();
+                        let _ = win.set_always_on_top(true);
+                    } else {
+                        let _ = win.hide();
                     }
                 }
             }
@@ -737,6 +735,7 @@ fn main() {
                 let _ = scope.allow_directory(comfy_root.join("temp"), true);
             }
 
+            #[cfg(target_os = "macos")]
             start_lifecycle_tracker(handle);
 
             let toggle = MenuItem::with_id(app, "toggle", "Show / Hide ComfyPanel", true, None::<&str>)?;
