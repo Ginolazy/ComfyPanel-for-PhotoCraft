@@ -43,6 +43,7 @@ jobs:
           workspaces: './src-tauri -> target'
 
       - name: Configure Git for Private Core Crate
+        shell: bash
         run: git config --global url."https://${{ secrets.CORE_REPO_TOKEN }}@github.com/".insteadOf "https://github.com/"
 
       - name: Install dependencies
@@ -78,6 +79,7 @@ jobs:
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARGO_NET_GIT_FETCH_WITH_CLI: "true"
         with:
           tagName: ${{ github.ref_name }}
           releaseName: 'ComfyPanel for PhotoCraft ${{ github.ref_name }}'
