@@ -716,6 +716,7 @@ fn main() {
                 apply_non_activating_windows(&win);
             }
 
+            #[cfg(target_os = "macos")]
             let handle = app.handle().clone();
 
             #[cfg(target_os = "macos")]
