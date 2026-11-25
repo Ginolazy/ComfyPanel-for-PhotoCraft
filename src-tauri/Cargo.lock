@@ -2854,7 +2854,7 @@ dependencies = [
 [[package]]
 name = "photocraft-core"
 version = "0.1.0"
-source = "git+https://github.com/Ginolazy/comfypanel-core-private.git#e341ad3e977bd8d260c5b9a294e788d7b4e3b25a"
+source = "git+https://github.com/Ginolazy/comfypanel-core-private.git#76efd661fc49b4f546fb5f74b382e49412b95517"
 dependencies = [
  "base64 0.23.1",
  "block2",
