@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ComfyPanel",
+  "version": "1.0.0",
+  "identifier": "com.comfypanel.photocraft",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": true,
+    "security": {
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": [
+            "$APPDATA/**",
+            "$APPLOCALDATA/**",
+            "$CACHE/**",
+            "$TEMP/**"
+          ],
+          "requireLiteralLeadingDot": false
+        }
+      },
+      "csp": "default-src 'self' tauri: asset:; script-src 'self' 'unsafe-inline' 'unsafe-eval' tauri: asset: https://gosspublic.alicdn.com; style-src 'self' 'unsafe-inline' tauri: asset:; img-src 'self' tauri: asset: data: blob: http://127.0.0.1:* http://localhost:* https:; media-src 'self' tauri: asset: data: blob: http://127.0.0.1:* http://localhost:* https:; connect-src 'self' tauri: asset: ws://127.0.0.1:* ws://localhost:* http://127.0.0.1:* http://localhost:* https:; font-src 'self' tauri: asset: data:",
+      "capabilities": [
+        {
+          "identifier": "main-window",
+          "windows": [
+            "main",
+            "comfy_bridge",
+            "turbo"
+          ],
+          "permissions": [
+            "core:default",
+            "core:event:default",
+            "core:window:default",
+            "core:window:allow-start-dragging",
+            "core:window:allow-hide",
+            "core:window:allow-show",
+            "core:window:allow-set-size",
+            "core:window:allow-set-position",
+            "core:window:allow-set-always-on-top",
+            "core:tray:default",
+            "core:webview:default",
+            "core:webview:allow-create-webview"
+          ]
+        }
+      ]
+    },
+    "windows": [
+      {
+        "label": "main",
+        "title": "ComfyPanel",
+        "width": 320,
+        "height": 960,
+        "center": false,
+        "resizable": true,
+        "decorations": false,
+        "transparent": false,
+        "shadow": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "visible": false
+      },
+      {
+        "label": "turbo",
+        "title": "ComfyPanel Turbo Bar",
+        "url": "turbo/index.html",
+        "width": 440,
+        "height": 40,
+        "center": true,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": false,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "visible": false
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "infoPlist": "Info.plist"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "perMachine",
+        "installerHooks": "nsis/hooks.nsh"
+      }
+    }
+  }
+}

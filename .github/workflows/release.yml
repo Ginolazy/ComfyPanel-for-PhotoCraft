@@ -1,0 +1,90 @@
+name: Release ComfyPanel for PhotoCraft
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: 'macos-latest'
+            args: '--target universal-apple-darwin --bundles dmg'
+            tauriScript: 'bash scripts/build_macos_release.sh'
+          - platform: 'windows-latest'
+            args: '--bundles nsis'
+            tauriScript: ''
+
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Install Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - name: Rust cache
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './src-tauri -> target'
+
+      - name: Configure Git for Private Core Crate
+        shell: bash
+        run: git config --global url."https://${{ secrets.CORE_REPO_TOKEN }}@github.com/".insteadOf "https://github.com/"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare release notes
+        id: release_notes
+        shell: bash
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          import re
+
+          version = os.environ.get("GITHUB_REF_NAME", "").lstrip("v")
+          notes = "Automated release built by GitHub Actions."
+          if os.path.exists("CHANGELOG.md"):
+              with open("CHANGELOG.md", "r", encoding="utf-8") as f:
+                  changelog = f.read()
+              match = re.search(rf"(?m)^(?:##\s*)?\[?v?{re.escape(version)}\]?\s*(?:[-—].*)?$", changelog)
+              if match:
+                  body = changelog[match.end():]
+                  next_section = re.search(r"(?m)^##\s+", body)
+                  extracted = body[:next_section.start()].strip() if next_section else body.strip()
+                  if extracted:
+                      notes = extracted
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output_file:
+              output_file.write("body<<RELEASE_NOTES\n")
+              output_file.write(notes + "\n")
+              output_file.write("RELEASE_NOTES\n")
+          PYEOF
+
+      - name: Build PhotoCraft with Tauri
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARGO_NET_GIT_FETCH_WITH_CLI: "true"
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: 'ComfyPanel for PhotoCraft ${{ github.ref_name }}'
+          releaseBody: ${{ steps.release_notes.outputs.body }}
+          releaseDraft: false
+          prerelease: false
+          tauriScript: ${{ matrix.tauriScript }}
+          args: ${{ matrix.args }}
